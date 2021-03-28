@@ -14,7 +14,6 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     var index: Int = 0
 
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var omageView: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
@@ -36,7 +35,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     func setUpConstraints() {
         NSLayoutConstraint.activate([
-                                        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
         omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
         ])
     }
@@ -46,7 +45,6 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         view.backgroundColor = #colorLiteral(red: 0.9633252025, green: 0.9266983271, blue: 0.8697786331, alpha: 1)
         setUpConstraints()
 
-        nameLabel.text = article.name
         labelTitle.text = article.title
         labelDescription.text = article.description
         publisheAtLabel.text = article.publishedAt
@@ -55,8 +53,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         DispatchQueue.main.async {
             if let url = URL(string: self.article.urlToImage) {
                 if let data = try? Data(contentsOf: url) {
-//                    self.omageView.image = UIImage(data: try! Data(contentsOf: url))
-                    self.omageView.image = UIImage(data: try Data(contentsOf: url))
+                    self.omageView.image = UIImage(data: try! Data(contentsOf: url))
                 }
             }
         }

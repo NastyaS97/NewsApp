@@ -49,8 +49,7 @@ class NewsViewController: UITableViewController {
 
         cell.textLabel?.text = article.title
         cell.detailTextLabel?.text = article.content
-//        cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: article.urlToImage)!))
-        cell.imageView?.image = UIImage(data: try Data(contentsOf: URL(string: article.urlToImage)!))
+        cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: article.urlToImage)!))
      return cell
      }
 

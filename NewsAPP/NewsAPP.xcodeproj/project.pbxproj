@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081E95B2610FFD500C3A831 /* Date+Ex.swift */; };
 		E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2A260CE650005CE323 /* AppDelegate.swift */; };
 		E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2C260CE650005CE323 /* SceneDelegate.swift */; };
 		E0883A32260CE650005CE323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0883A30260CE650005CE323 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E081E95B2610FFD500C3A831 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		E0883A27260CE650005CE323 /* NewsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0883A2A260CE650005CE323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0883A2C260CE650005CE323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E081E95E2610FFE300C3A831 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E081E95B2610FFD500C3A831 /* Date+Ex.swift */,
+			);
+			name = Extension;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E0883A1E260CE650005CE323 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 			children = (
 				E09E8C4F2610ABEA00FA158A /* MODELS */,
 				E09E8C6A2610F2B500FA158A /* Views */,
+				E081E95E2610FFE300C3A831 /* Extension */,
 				E09E8C6B2610F2CD00FA158A /* Controlles */,
 				E09E8C6D2610F2EB00FA158A /* Resources */,
 				E0883A2C260CE650005CE323 /* SceneDelegate.swift */,
@@ -227,7 +239,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -236,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */,
 				E09E8C632610EB4200FA158A /* TabBar.swift in Sources */,
 				E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */,
 				E09E8C562610C5E500FA158A /* PageViewController.swift in Sources */,

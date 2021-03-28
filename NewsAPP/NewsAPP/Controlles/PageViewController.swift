@@ -52,8 +52,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         if index >= articles.count {
             return nil
         }
-//        let vc = (storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as! OneNewsViewController)
-        let vc = ((storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") ?? "") as OneNewsViewController)
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as! OneNewsViewController)
         vc.article = articles[index]
         vc.index = index
         return vc
