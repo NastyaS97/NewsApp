@@ -17,6 +17,11 @@
 		E0883A47260D00AA005CE323 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A46260D00AA005CE323 /* NewsViewController.swift */; };
 		E09E8C532610B28D00FA158A /* OneNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C522610B28D00FA158A /* OneNewsViewController.swift */; };
 		E09E8C562610C5E500FA158A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C552610C5E500FA158A /* PageViewController.swift */; };
+		E09E8C5A2610E39300FA158A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C592610E39300FA158A /* ButtonView.swift */; };
+		E09E8C5D2610E70300FA158A /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E09E8C5C2610E70300FA158A /* SF-Pro-Display-Medium.otf */; };
+		E09E8C602610E70800FA158A /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E09E8C5F2610E70800FA158A /* SF-Pro-Display-Black.otf */; };
+		E09E8C632610EB4200FA158A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C622610EB4200FA158A /* TabBar.swift */; };
+		E09E8C672610EDFF00FA158A /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C662610EDFF00FA158A /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,15 @@
 		E0883A46260D00AA005CE323 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		E09E8C522610B28D00FA158A /* OneNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNewsViewController.swift; sourceTree = "<group>"; };
 		E09E8C552610C5E500FA158A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		E09E8C592610E39300FA158A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		E09E8C5C2610E70300FA158A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../Downloads/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		E09E8C5F2610E70800FA158A /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Black.otf"; path = "../../../../Downloads/SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		E09E8C622610EB4200FA158A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		E09E8C662610EDFF00FA158A /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		E09E8C712610F31900FA158A /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		E09E8C722610F31C00FA158A /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Black.otf"; path = "../../../../../Downloads/SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		E09E8C732610F31D00FA158A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		E09E8C742610F32900FA158A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../Downloads/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +79,16 @@
 			isa = PBXGroup;
 			children = (
 				E09E8C4F2610ABEA00FA158A /* MODELS */,
-				E0883A2A260CE650005CE323 /* AppDelegate.swift */,
+				E09E8C6A2610F2B500FA158A /* Views */,
+				E09E8C6B2610F2CD00FA158A /* Controlles */,
+				E09E8C6D2610F2EB00FA158A /* Resources */,
 				E0883A2C260CE650005CE323 /* SceneDelegate.swift */,
+				E0883A2A260CE650005CE323 /* AppDelegate.swift */,
 				E0883A30260CE650005CE323 /* Main.storyboard */,
-				E09E8C552610C5E500FA158A /* PageViewController.swift */,
-				E09E8C522610B28D00FA158A /* OneNewsViewController.swift */,
-				E0883A46260D00AA005CE323 /* NewsViewController.swift */,
 				E0883A33260CE651005CE323 /* Assets.xcassets */,
+				E09E8C702610F31400FA158A /* Fonts */,
+				E09E8C5F2610E70800FA158A /* SF-Pro-Display-Black.otf */,
+				E09E8C5C2610E70300FA158A /* SF-Pro-Display-Medium.otf */,
 				E0883A35260CE652005CE323 /* LaunchScreen.storyboard */,
 				E0883A38260CE652005CE323 /* Info.plist */,
 			);
@@ -87,6 +104,44 @@
 			path = MODELS;
 			sourceTree = "<group>";
 		};
+		E09E8C6A2610F2B500FA158A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E09E8C662610EDFF00FA158A /* RoundImageView.swift */,
+				E09E8C622610EB4200FA158A /* TabBar.swift */,
+				E09E8C592610E39300FA158A /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E09E8C6B2610F2CD00FA158A /* Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				E0883A46260D00AA005CE323 /* NewsViewController.swift */,
+				E09E8C522610B28D00FA158A /* OneNewsViewController.swift */,
+				E09E8C552610C5E500FA158A /* PageViewController.swift */,
+			);
+			path = Controlles;
+			sourceTree = "<group>";
+		};
+		E09E8C6D2610F2EB00FA158A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E09E8C702610F31400FA158A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E09E8C732610F31D00FA158A /* SF-Pro-Display-Medium.otf */,
+				E09E8C742610F32900FA158A /* SF-Pro-Display-Medium.otf */,
+				E09E8C722610F31C00FA158A /* SF-Pro-Display-Black.otf */,
+				E09E8C712610F31900FA158A /* SF-Pro-Display-Black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +152,7 @@
 				E0883A23260CE650005CE323 /* Sources */,
 				E0883A24260CE650005CE323 /* Frameworks */,
 				E0883A25260CE650005CE323 /* Resources */,
+				E09E8C752610F38300FA158A /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -144,7 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09E8C5D2610E70300FA158A /* SF-Pro-Display-Medium.otf in Resources */,
 				E0883A37260CE652005CE323 /* LaunchScreen.storyboard in Resources */,
+				E09E8C602610E70800FA158A /* SF-Pro-Display-Black.otf in Resources */,
 				E0883A34260CE651005CE323 /* Assets.xcassets in Resources */,
 				E0883A32260CE650005CE323 /* Main.storyboard in Resources */,
 			);
@@ -152,14 +210,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E09E8C752610F38300FA158A /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0883A23260CE650005CE323 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09E8C632610EB4200FA158A /* TabBar.swift in Sources */,
 				E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */,
 				E09E8C562610C5E500FA158A /* PageViewController.swift in Sources */,
+				E09E8C5A2610E39300FA158A /* ButtonView.swift in Sources */,
 				E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */,
+				E09E8C672610EDFF00FA158A /* RoundImageView.swift in Sources */,
 				E0883A40260CE6C6005CE323 /* Model.swift in Sources */,
 				E0883A47260D00AA005CE323 /* NewsViewController.swift in Sources */,
 				E09E8C532610B28D00FA158A /* OneNewsViewController.swift in Sources */,

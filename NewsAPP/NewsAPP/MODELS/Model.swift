@@ -19,7 +19,6 @@ import Foundation
 //"publishedAt": "2021-03-24T20:00:00Z",
 //"content": "Building upon the classicRocky saga, Creed follows Adonis Creed Johnson (Michael B. Jordan), the son of Rocky Balboas rival-turned -ally Apollo Creed. When Adonis decides to make a name for himself i… [+425 chars]"
 
-
 struct News {
     var name: String
     var author: String

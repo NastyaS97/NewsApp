@@ -8,13 +8,20 @@
 import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
+    @IBAction func updateNewsPages(_ sender: Any) {
+        loadNews {
+            DispatchQueue.main.async {
+//                self.refreshControl?.endRefreshing()
+//                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
 
         self.showViewController()
-        
         loadNews {
             self.showViewController()
         }
@@ -45,7 +52,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         if index >= articles.count {
             return nil
         }
-        let vc = (storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as! OneNewsViewController)
+//        let vc = (storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as! OneNewsViewController)
+        let vc = ((storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") ?? "") as OneNewsViewController)
         vc.article = articles[index]
         vc.index = index
         return vc

@@ -25,6 +25,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         if let url = URL(string: article.url) {
             let safariVC = SFSafariViewController(url: url)
             safariVC.delegate = self
+            safariVC.modalPresentationStyle = .fullScreen
             present(safariVC, animated: true, completion: nil)
         }
     }
@@ -33,9 +34,18 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         controller.dismiss(animated: true, completion: nil)
     }
 
+    func setUpConstraints() {
+        NSLayoutConstraint.activate([
+                                        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+        omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
+        ])
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.9633252025, green: 0.9266983271, blue: 0.8697786331, alpha: 1)
+        setUpConstraints()
+
         nameLabel.text = article.name
         labelTitle.text = article.title
         labelDescription.text = article.description
@@ -45,7 +55,8 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         DispatchQueue.main.async {
             if let url = URL(string: self.article.urlToImage) {
                 if let data = try? Data(contentsOf: url) {
-                    self.omageView.image = UIImage(data: try! Data(contentsOf: url))
+//                    self.omageView.image = UIImage(data: try! Data(contentsOf: url))
+                    self.omageView.image = UIImage(data: try Data(contentsOf: url))
                 }
             }
         }

@@ -50,7 +50,6 @@ func loadNews(completionHangler: (()-> Void)?) {
     let downloadTask = session.downloadTask(with: url!) { (urlFile, responce, error) in
         if urlFile != nil {
             try? FileManager.default.copyItem(at: urlFile!, to: urlToData)
-            parseNews()
             completionHangler?()
         }
     }
