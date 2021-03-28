@@ -21,6 +21,7 @@ import Foundation
 
 
 struct News {
+    var name: String
     var author: String
     var title: String
     var description: String
@@ -30,6 +31,7 @@ struct News {
     var content: String
     var sourceName: String
     init(dictionary: Dictionary<String, Any>) {
+        name = dictionary["name"] as? String ?? ""
         author = dictionary["author"] as? String ?? ""
         title = dictionary["title"] as? String ?? ""
         description = dictionary["description"] as? String ?? ""
