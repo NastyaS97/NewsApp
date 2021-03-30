@@ -11,7 +11,6 @@ import SafariServices
 class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     var article: News!
-
     var index: Int = 0
 
     @IBOutlet weak var omageView: UIImageView!
@@ -42,7 +41,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.9633252025, green: 0.9266983271, blue: 0.8697786331, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.6900274754, green: 0.7786818147, blue: 0.8508635163, alpha: 1)
         setUpConstraints()
 
         labelTitle.text = article.title
@@ -52,7 +51,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
         DispatchQueue.main.async {
             if let url = URL(string: self.article.urlToImage) {
-                if let data = try? Data(contentsOf: url) {
+                if (try? Data(contentsOf: url)) != nil {
                     self.omageView.image = UIImage(data: try! Data(contentsOf: url))
                 }
             }

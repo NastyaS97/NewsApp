@@ -18,7 +18,7 @@ class WATabBarController: UITabBarController {
                                                    selectedImage: nil)
 
         let oneNewsController = OneNewsViewController()
-        oneNewsController.tabBarItem = UITabBarItem(title: "news",
+        oneNewsController.tabBarItem = UITabBarItem(title: "ScrollNews",
                                                      image: UIImage(named: "news"),
                                                      tag: 2)
 

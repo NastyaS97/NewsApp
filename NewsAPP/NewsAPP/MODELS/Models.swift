@@ -44,7 +44,7 @@ var urlToData: URL {
 }
 
 func loadNews(completionHangler: (()-> Void)?) {
-    let url = URL(string:"https://newsapi.org/v2/everything?q=apple&from=2021-03-24&to=2021-03-24&sortBy=popularity&apiKey=fee4606665f2479188420a49a3fe23ff")
+    let url = URL(string:"https://newsapi.org/v2/everything?domains=wsj.com&apiKey=fee4606665f2479188420a49a3fe23ff")
     let session = URLSession(configuration: .default)
 
     let downloadTask = session.downloadTask(with: url!) { (urlFile, responce, error) in
@@ -53,6 +53,5 @@ func loadNews(completionHangler: (()-> Void)?) {
             completionHangler?()
         }
     }
-
     downloadTask.resume()
 }
