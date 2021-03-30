@@ -9,19 +9,28 @@ import UIKit
 
 class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchResultsUpdating {
 
+    //MARK: - variables
+    
     var newsFilter = [News]()
-    var newsList = [News]()
 
     let searchController = UISearchController()
 
     @IBAction func refreshNewsControllerAction(_ sender: Any) {
         loadNews {
             DispatchQueue.main.async {
-                self.refreshControl?.endRefreshing()
-                self.tableView.reloadData()
+                self.refreshControl?.tintColor = .lightGray
+                self.refreshControl?.attributedTitle = NSAttributedString(string: "Update")
+                self.refreshControl?.addTarget(self, action: #selector(self.updateTable), for: .valueChanged)
             }
         }
     }
+
+    @objc func updateTable() {
+        self.refreshControl?.endRefreshing()
+        self.tableView.reloadData()
+    }
+
+    //MARK: - life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,23 +42,6 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
         }
 
         view.backgroundColor = #colorLiteral(red: 0, green: 0.3237846792, blue: 0.4123533964, alpha: 1)
-    }
-
-    func initsearchController() {
-        searchController.loadViewIfNeeded()
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.enablesReturnKeyAutomatically = false
-        searchController.searchBar.returnKeyType = UIReturnKeyType.done
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Для поиска нажмите здесь"
-        definesPresentationContext = true
-
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
-        searchController.searchBar.scopeButtonTitles = ["ALL", "Business"]
-        searchController.searchBar.delegate = self
     }
 
     // MARK: - Table view data source
@@ -69,14 +61,13 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-//        let thisNews: News!
-//        if self.searchController.isActive {
-//            thisNews = newsFilter[indexPath.row]
-//        } else {
-//            thisNews = newsList[indexPath.row]
-//        }
+        let article: News!
+        if self.searchController.isActive {
+            article = newsFilter[indexPath.row]
+        } else {
+            article = articles[indexPath.row]
+        }
 
-        let article = articles[indexPath.row]
         cell.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.9294117647, blue: 0.9568627451, alpha: 1)
         cell.layer.shadowRadius = 25
         cell.layer.shadowOpacity = 25
@@ -92,36 +83,58 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
         performSegue(withIdentifier: "goToOneNews", sender: self)
     }
 
+    //MARK: - prepare for segue
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOneNews" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                (segue.destination as? OneNewsViewController)?.article = articles[indexPath.row]
-                tableView.deselectRow(at: indexPath, animated: true)
+            let indexPath = tableView.indexPathForSelectedRow!
+            let tableViewDetail = segue.destination as? OneNewsViewController
 
-//                let selectedNews: News!
-//                if self.searchController.isActive {
-//                    selectedNews = newsFilter[indexPath.row]
-//                } else {
-//                    selectedNews = newsList[indexPath.row]
-//                }
+            let selectedNews: News!
+            if self.searchController.isActive {
+                selectedNews = newsFilter[indexPath.row]
+            } else {
+                selectedNews = articles[indexPath.row]
             }
+
+            tableViewDetail!.selectedNews = selectedNews
+            tableView.deselectRow(at: indexPath, animated: true)
         }
+    }
+
+    //MARK: - actions
+
+    func initsearchController() {
+        searchController.loadViewIfNeeded()
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.enablesReturnKeyAutomatically = false
+        searchController.searchBar.returnKeyType = UIReturnKeyType.done
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Для поиска нажмите здесь"
+        definesPresentationContext = true
+
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.scopeButtonTitles = ["news", "the latest"]
+        searchController.searchBar.delegate = self
     }
 
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         let scopeButton = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-        let searchText = searchBar.text!
+        let searchText = searchBar.text ?? ""
 
         filterForSearchTextAndScopeButton(searchText: searchText, scopeButton: scopeButton)
     }
 
-    func filterForSearchTextAndScopeButton(searchText: String, scopeButton: String = "ALL") {
-        newsList = newsFilter.filter {
+    func filterForSearchTextAndScopeButton(searchText: String, scopeButton: String = "news") {
+        newsFilter = articles.filter {
             news in
-            let scopeMatch = (scopeButton == "ALL" || news.title.lowercased().contains(scopeButton.lowercased()))
+            let scopeMatch = (scopeButton == "news" || news.title.lowercased().contains(scopeButton.lowercased()))
 
-            if(searchController.searchBar.text != "") {
+            if searchController.searchBar.text != "" {
                 let searchTextMatch = news.title.lowercased().contains(searchText.lowercased())
 
                 return scopeMatch && searchTextMatch

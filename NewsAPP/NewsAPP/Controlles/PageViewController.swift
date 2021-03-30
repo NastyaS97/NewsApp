@@ -8,6 +8,7 @@
 import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
+    
     @IBAction func updateNewsPages(_ sender: Any) {
         loadNews {
             DispatchQueue.main.async {
@@ -16,6 +17,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
             }
         }
     }
+
+    //MARK: - life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
             self.showViewController()
         }
     }
+
+    //MARK: - actions
 
     func showViewController() {
         DispatchQueue.main.async {

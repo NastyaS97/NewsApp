@@ -10,8 +10,13 @@ import SafariServices
 
 class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
+    //MARK: - variables
+
     var article: News!
+    var selectedNews: News!
     var index: Int = 0
+
+    //MARK: - gui variables
 
     @IBOutlet weak var omageView: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -28,16 +33,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         }
     }
 
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-
-    func setUpConstraints() {
-        NSLayoutConstraint.activate([
-        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-        omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
-        ])
-    }
+    //MARK: - life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +52,18 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
                 }
             }
         }
+    }
+
+    //MARK: - actions
+
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+
+    func setUpConstraints() {
+        NSLayoutConstraint.activate([
+        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+        omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
+        ])
     }
 }

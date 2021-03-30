@@ -11,6 +11,7 @@ import UIKit
 class RoundedImagView: UIImageView {
 
     // MARK: - IBInspectable
+    
     @IBInspectable var borderWidth: CGFloat {
         set {
             layer.borderWidth = newValue
