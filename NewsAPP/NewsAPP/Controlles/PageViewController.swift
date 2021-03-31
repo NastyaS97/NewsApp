@@ -58,7 +58,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
             return nil
         }
         let vc = storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as? OneNewsViewController
-        vc?.article = articles[index]
+        vc?.selectedNews = articles[index]
         vc?.index = index
         return vc
     }

@@ -25,7 +25,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var authorLabel: UILabel!
 
     @IBAction func safariButton(_ sender: Any) {
-        if let url = URL(string: article.url) {
+        if let url = URL(string: selectedNews.url) {
             let safariVC = SFSafariViewController(url: url)
             safariVC.delegate = self
             safariVC.modalPresentationStyle = .fullScreen
@@ -37,16 +37,21 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.6900274754, green: 0.7786818147, blue: 0.8508635163, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0.6900274754, green: 0.7786818147, blue: 0.8508635163, alpha: 1)
         setUpConstraints()
 
-        labelTitle.text = article.title
-        labelDescription.text = article.description
-        publisheAtLabel.text = article.publishedAt
-        authorLabel.text = article.author
+//        self.labelTitle.text = article.title
+//        self.labelDescription.text = article.description
+//        self.publisheAtLabel.text = article.publishedAt
+//        self.authorLabel.text = article.author
+
+        self.labelTitle.text = selectedNews.title
+        self.labelDescription.text = selectedNews.description
+        self.publisheAtLabel.text = selectedNews.publishedAt
+        self.authorLabel.text = selectedNews.author
 
         DispatchQueue.main.async {
-            if let url = URL(string: self.article.urlToImage) {
+            if let url = URL(string: self.selectedNews.urlToImage) {
                 if (try? Data(contentsOf: url)) != nil {
                     self.omageView.image = UIImage(data: try! Data(contentsOf: url))
                 }

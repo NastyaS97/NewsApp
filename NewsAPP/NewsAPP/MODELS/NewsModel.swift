@@ -7,17 +7,17 @@
 
 import Foundation
 
-//source": {
-//"id": "the-wall-street-journal",
-//"name": "The Wall Street Journal"
+//"source": {
+//"id": "techcrunch",
+//"name": "TechCrunch"
 //},
-//"author": "Telis Demos",
-//"title": "All Work and No Play Could Make Wall Street Less Profitable...",
-//"description": "All Work and No Play Could Make Wall Street Less Profitable...\r\n\n \n \n \n (Second column, 5th story, link)\r\n\n \r\n\n \r\n\n \n Related stories:Global banks warn of possible hedge fund defaults...\r\nSecretive Derivatives at Center of Blowup...\r\nReal Estate Investors Gro…",
-//"url": "https://www.wsj.com/articles/all-work-and-no-play-could-make-wall-street-less-profitable-11617037002",
-//"urlToImage": "https://images.wsj.net/im-317682/social",
-//"publishedAt": "2021-03-29T17:16:39Z",
-//"content": "It may only be tiny violins that most people would play for overworked junior investment bankers on Wall Street. But their concerns do raise some interesting questions for investors about the profit … [+2264 chars]"
+//"author": "Brian Heater",
+//"title": "Ballot counting for Amazon's historic union vote starts today",
+//"description": "Vote counting begins today in the historic effort to unionize Amazon’s Bessemer, Alabama fulfillment center. The warehouse — which opened exactly a year ago to meet ramping up demand as COVID-19 bore down on the U.S. — has become ground zero for one of the mo…",
+//"url": "https://techcrunch.com/2021/03/30/ballot-counting-for-amazons-historic-union-vote-starts-today/",
+//"urlToImage": "https://techcrunch.com/wp-content/uploads/2021/03/GettyImages-1231457255.jpeg?w=600",
+//"publishedAt": "2021-03-30T17:05:30Z",
+//"content": "Vote counting begins today in the historic effort to unionize Amazons Bessemer, Alabama fulfillment center. The warehouse — which opened exactly a year ago to meet ramping up demand as COVID-19 bore … [+5088 chars]"
 
 
 struct News {
