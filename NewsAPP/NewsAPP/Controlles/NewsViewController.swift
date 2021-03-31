@@ -71,7 +71,6 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
         cell.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.9294117647, blue: 0.9568627451, alpha: 1)
         cell.layer.shadowRadius = 25
         cell.layer.shadowOpacity = 25
-
         cell.textLabel?.text = article.title
         cell.detailTextLabel?.text = article.content
         cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: article.urlToImage)!))
