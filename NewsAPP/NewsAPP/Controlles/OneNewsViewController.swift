@@ -25,12 +25,13 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var authorLabel: UILabel!
 
     @IBAction func safariButton(_ sender: Any) {
-        if let url = URL(string: selectedNews.url) {
-            let safariVC = SFSafariViewController(url: url)
-            safariVC.delegate = self
-            safariVC.modalPresentationStyle = .fullScreen
-            present(safariVC, animated: true, completion: nil)
-        }
+        showAlert()
+//        if let url = URL(string: selectedNews.url) {
+//            let safariVC = SFSafariViewController(url: url)
+//            safariVC.delegate = self
+//            safariVC.modalPresentationStyle = .fullScreen
+//            present(safariVC, animated: true, completion: nil)
+//        }
     }
 
     //MARK: - life cycle
@@ -71,4 +72,22 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
         ])
     }
+
+    func showAlert() {
+        let alert = UIAlertController(title: "Are you agree?", message: "Press OK to confirm the transition", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Press OK to confirm the transition", style: .default, handler: { (action) in
+            if let url = URL(string: self.selectedNews.url) {
+                let safariVC = SFSafariViewController(url: url)
+                safariVC.delegate = self
+                safariVC.modalPresentationStyle = .fullScreen
+                self.present(safariVC, animated: true, completion: nil)
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("cancel")
+        }))
+        present(alert, animated: true)
+    }
 }
+
+//alert.addAction(UIAlertAction(title:"OK", style: .Default, handler:  { action in self.performSegueWithIdentifier("mySegueIdentifier", sender: self) }

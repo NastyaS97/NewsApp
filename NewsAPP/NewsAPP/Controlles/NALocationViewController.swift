@@ -16,7 +16,7 @@ class NALocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=714f89121c24133c60091ce6575bb2d0") else { return }
+        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&units=imperial&appid=714f89121c24133c60091ce6575bb2d0") else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data, error == nil {
                 do {
@@ -46,5 +46,11 @@ class NALocationViewController: UIViewController {
             weatherImage.image = UIImage(named: "Cloudy") // TODO
             background.backgroundColor = UIColor(red: 0.42, green: 0.55, blue: 0.71, alpha: 1.0)
         }
+    }
+}
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
     }
 }

@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52AD26250EE50062CB0E /* NALocationViewController.swift */; };
-		E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */; };
-		E06B52BB2625D5B40062CB0E /* Shedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52BA2625D5B40062CB0E /* Shedule.swift */; };
-		E06B52BE2625D5EF0062CB0E /* Accets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52BD2625D5EF0062CB0E /* Accets.swift */; };
-		E06B52C12625D6170062CB0E /* SheduleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52C02625D6170062CB0E /* SheduleStorage.swift */; };
-		E06B52C42625D9740062CB0E /* ContextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52C32625D9740062CB0E /* ContextCell.swift */; };
-		E06B52CD2625EAD40062CB0E /* ResizableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52CC2625EAD40062CB0E /* ResizableLayout.swift */; };
 		E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081E95B2610FFD500C3A831 /* Date+Ex.swift */; };
 		E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2A260CE650005CE323 /* AppDelegate.swift */; };
 		E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2C260CE650005CE323 /* SceneDelegate.swift */; };
@@ -34,12 +28,6 @@
 
 /* Begin PBXFileReference section */
 		E06B52AD26250EE50062CB0E /* NALocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALocationViewController.swift; sourceTree = "<group>"; };
-		E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACollectionWithTimeTable.swift; sourceTree = "<group>"; };
-		E06B52BA2625D5B40062CB0E /* Shedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shedule.swift; sourceTree = "<group>"; };
-		E06B52BD2625D5EF0062CB0E /* Accets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accets.swift; sourceTree = "<group>"; };
-		E06B52C02625D6170062CB0E /* SheduleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduleStorage.swift; sourceTree = "<group>"; };
-		E06B52C32625D9740062CB0E /* ContextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCell.swift; sourceTree = "<group>"; };
-		E06B52CC2625EAD40062CB0E /* ResizableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLayout.swift; sourceTree = "<group>"; };
 		E081E95B2610FFD500C3A831 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		E0883A27260CE650005CE323 /* NewsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0883A2A260CE650005CE323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,27 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E06B52B82625D57B0062CB0E /* Collections */ = {
-			isa = PBXGroup;
-			children = (
-				E06B52B92625D5860062CB0E /* ModelShedule */,
-			);
-			path = Collections;
-			sourceTree = "<group>";
-		};
-		E06B52B92625D5860062CB0E /* ModelShedule */ = {
-			isa = PBXGroup;
-			children = (
-				E06B52BA2625D5B40062CB0E /* Shedule.swift */,
-				E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */,
-				E06B52BD2625D5EF0062CB0E /* Accets.swift */,
-				E06B52C32625D9740062CB0E /* ContextCell.swift */,
-				E06B52C02625D6170062CB0E /* SheduleStorage.swift */,
-				E06B52CC2625EAD40062CB0E /* ResizableLayout.swift */,
-			);
-			path = ModelShedule;
-			sourceTree = "<group>";
-		};
 		E081E95E2610FFE300C3A831 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +131,6 @@
 		E09E8C6B2610F2CD00FA158A /* Controlles */ = {
 			isa = PBXGroup;
 			children = (
-				E06B52B82625D57B0062CB0E /* Collections */,
 				E0883A46260D00AA005CE323 /* NewsViewController.swift */,
 				E09E8C522610B28D00FA158A /* OneNewsViewController.swift */,
 				E09E8C552610C5E500FA158A /* PageViewController.swift */,
@@ -286,9 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E06B52C42625D9740062CB0E /* ContextCell.swift in Sources */,
-				E06B52CD2625EAD40062CB0E /* ResizableLayout.swift in Sources */,
-				E06B52BB2625D5B40062CB0E /* Shedule.swift in Sources */,
 				E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */,
 				E09E8C632610EB4200FA158A /* TabBar.swift in Sources */,
 				E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */,
@@ -300,10 +263,7 @@
 				E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */,
 				E0883A47260D00AA005CE323 /* NewsViewController.swift in Sources */,
 				E09E8C532610B28D00FA158A /* OneNewsViewController.swift in Sources */,
-				E06B52BE2625D5EF0062CB0E /* Accets.swift in Sources */,
 				E0883A43260CF360005CE323 /* Models.swift in Sources */,
-				E06B52C12625D6170062CB0E /* SheduleStorage.swift in Sources */,
-				E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
