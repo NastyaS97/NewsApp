@@ -37,7 +37,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.6900274754, green: 0.7786818147, blue: 0.8508635163, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9098039216, blue: 0.8392156863, alpha: 1)
         setUpConstraints()
 
 //        self.labelTitle.text = article.title

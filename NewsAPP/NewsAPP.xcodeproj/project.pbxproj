@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52AD26250EE50062CB0E /* NALocationViewController.swift */; };
 		E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081E95B2610FFD500C3A831 /* Date+Ex.swift */; };
 		E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2A260CE650005CE323 /* AppDelegate.swift */; };
 		E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A2C260CE650005CE323 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E06B52AD26250EE50062CB0E /* NALocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALocationViewController.swift; sourceTree = "<group>"; };
 		E081E95B2610FFD500C3A831 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		E0883A27260CE650005CE323 /* NewsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0883A2A260CE650005CE323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				E0883A46260D00AA005CE323 /* NewsViewController.swift */,
 				E09E8C522610B28D00FA158A /* OneNewsViewController.swift */,
 				E09E8C552610C5E500FA158A /* PageViewController.swift */,
+				E06B52AD26250EE50062CB0E /* NALocationViewController.swift */,
 			);
 			path = Controlles;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */,
 				E09E8C672610EDFF00FA158A /* RoundImageView.swift in Sources */,
 				E0883A40260CE6C6005CE323 /* NewsModel.swift in Sources */,
+				E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */,
 				E0883A47260D00AA005CE323 /* NewsViewController.swift in Sources */,
 				E09E8C532610B28D00FA158A /* OneNewsViewController.swift in Sources */,
 				E0883A43260CF360005CE323 /* Models.swift in Sources */,

@@ -13,18 +13,42 @@ class WATabBarController: UITabBarController {
         super.viewDidLoad()
 
         let newsController = NewsViewController()
-        newsController.tabBarItem = UITabBarItem(title: "allNews",
-                                                   image: UIImage(systemName: "new"),
-                                                   selectedImage: nil)
+        newsController.tabBarItem = UITabBarItem(title: "Main",
+                                                 image: UIImage(systemName: "газета"),
+                                                 selectedImage: UIImage(systemName: "газетаЗаполненна"))
 
-        let oneNewsController = OneNewsViewController()
-        oneNewsController.tabBarItem = UITabBarItem(title: "ScrollNews",
-                                                     image: UIImage(named: "news"),
-                                                     tag: 2)
+//        let oneNewsController = OneNewsViewController()
+//        oneNewsController.tabBarItem = UITabBarItem(title: "ScrollNews",
+//                                                     image: UIImage(named: "news"),
+//                                                     tag: 2)
+
+
+        let mainVoewController = OneNewsViewController()
+        newsController.tabBarItem = UITabBarItem(title: "Details",
+                                                 image: UIImage(systemName: "второйТаб"),
+                                                 selectedImage: UIImage(systemName: "второйТаб"))
+
+
+
+//        let newsTabBarItem = UITabBarItem(title: "Details",
+//                                                       image: UIImage(systemName: "второйТаб"),
+//                                                       selectedImage: UIImage(systemName: "второйТаб"))
+//
+//        private lazy var weatherTabBarItem = UITabBarItem(title: "Location",
+//                                                       image: UIImage(systemName: "location"),
+//                                                       selectedImage: UIImage(systemName: "location.fill"))
+//
+//        private lazy var aboutUsTabBarItem = UITabBarItem(title: "AboutUs",
+//                                                       image: UIImage(systemName: "aboutUs"),
+//                                                       selectedImage: UIImage(systemName: "aboutUs.fill"))
+//
+//        private lazy var settingsTabBarItem = UITabBarItem(title: "Settings",
+//                                                       image: UIImage(systemName: "settings"),
+//                                                       selectedImage: UIImage(systemName: "settings.fill"))
 
         self.setViewControllers([
             UINavigationController(rootViewController: newsController),
-            UINavigationController(rootViewController: oneNewsController)],
+            UINavigationController(rootViewController: mainVoewController)],
                                 animated: true)
 
         self.setTabBarAppearance()

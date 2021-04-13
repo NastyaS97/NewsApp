@@ -36,7 +36,7 @@ struct News {
         title = dictionary["title"] as? String ?? ""
         description = dictionary["description"] as? String ?? ""
         url = dictionary["url"] as? String ?? ""
-        urlToImage = dictionary["urlToImage"] as? String ?? ""
+        urlToImage = dictionary["urlToImage"] as? String ?? "https://www.kindpng.com/picc/m/182-1827064_breaking-news-banner-png-transparent-background-breaking-news.png"
         publishedAt = dictionary["publishedAt"] as? String ?? ""
         content = dictionary["content"] as? String ?? ""
         sourceName = (dictionary["source"] as? Dictionary<String, Any> ?? ["": ""])["name"] as? String ?? ""

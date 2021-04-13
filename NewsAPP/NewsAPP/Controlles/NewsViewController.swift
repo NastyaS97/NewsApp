@@ -41,7 +41,7 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
             }
         }
 
-        view.backgroundColor = #colorLiteral(red: 0, green: 0.3237846792, blue: 0.4123533964, alpha: 1)
+        view.backgroundColor = UIColor(named: "AccentColor")
     }
 
     // MARK: - Table view data source
@@ -116,7 +116,7 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
 
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        searchController.searchBar.scopeButtonTitles = ["news", "the latest"]
+        searchController.searchBar.scopeButtonTitles = ["news", "Covid"]
         searchController.searchBar.delegate = self
     }
 
