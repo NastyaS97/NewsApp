@@ -19,7 +19,6 @@ import Foundation
 //"publishedAt": "2021-03-30T17:05:30Z",
 //"content": "Vote counting begins today in the historic effort to unionize Amazons Bessemer, Alabama fulfillment center. The warehouse — which opened exactly a year ago to meet ramping up demand as COVID-19 bore … [+5088 chars]"
 
-
 struct News {
     var name: String
     var author: String
