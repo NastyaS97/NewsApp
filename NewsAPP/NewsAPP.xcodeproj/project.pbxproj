@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03E2AC0262729180072F6CA /* NAAboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2ABF262729180072F6CA /* NAAboutUsController.swift */; };
 		E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52AD26250EE50062CB0E /* NALocationViewController.swift */; };
 		E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */; };
 		E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52BA2625D5B40062CB0E /* NAShedule.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E03E2ABF262729180072F6CA /* NAAboutUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAboutUsController.swift; sourceTree = "<group>"; };
 		E06B52AD26250EE50062CB0E /* NALocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALocationViewController.swift; sourceTree = "<group>"; };
 		E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACollectionWithTimeTable.swift; sourceTree = "<group>"; };
 		E06B52BA2625D5B40062CB0E /* NAShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAShedule.swift; sourceTree = "<group>"; };
@@ -166,6 +168,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		E03E2ABD262728F40072F6CA /* AboutUs controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2ABE262729040072F6CA /* Controller */,
+			);
+			path = "AboutUs controllers";
+			sourceTree = "<group>";
+		};
+		E03E2ABE262729040072F6CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2ABF262729180072F6CA /* NAAboutUsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E06B52B82625D57B0062CB0E /* Collection Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +236,7 @@
 				E06B52B82625D57B0062CB0E /* Collection Controller */,
 				E03E2AAE262713200072F6CA /* News Controlles */,
 				E09E8C6A2610F2B500FA158A /* Location Controlles */,
+				E03E2ABD262728F40072F6CA /* AboutUs controllers */,
 				E081E95E2610FFE300C3A831 /* Extension */,
 				E09E8C6D2610F2EB00FA158A /* Resources */,
 				E0883A38260CE652005CE323 /* Info.plist */,
@@ -346,7 +365,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -357,6 +377,7 @@
 			files = (
 				E06B52C42625D9740062CB0E /* NAContextCell.swift in Sources */,
 				E06B52CD2625EAD40062CB0E /* NAResizableLayout.swift in Sources */,
+				E03E2AC0262729180072F6CA /* NAAboutUsController.swift in Sources */,
 				E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */,
 				E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */,
 				E09E8C632610EB4200FA158A /* NATabBar.swift in Sources */,

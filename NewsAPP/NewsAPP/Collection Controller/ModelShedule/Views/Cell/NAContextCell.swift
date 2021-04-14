@@ -17,6 +17,8 @@ class ContextCell: UICollectionViewCell {
     @IBOutlet weak var timeGroupLabel: UILabel!
     @IBOutlet weak var lecturerLabel: UILabel!
 
+    static let reuseIdentifier = String(describing: ContextCell.self)
+
     var shedule: Shedule? {
         didSet {
             if let shedule = shedule {
@@ -27,8 +29,6 @@ class ContextCell: UICollectionViewCell {
             }
         }
     }
-
-    static let reuseIdentifier = String(describing: ContextCell.self)
 
     //MARK: - actions with animations
 

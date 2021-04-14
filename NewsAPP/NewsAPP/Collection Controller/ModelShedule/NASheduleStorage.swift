@@ -121,6 +121,5 @@ class SheduleStorage {
             group: "PM",
             time: "15:00",
             background: Assets.image.sketch_16
-        )
-    ]
+        )]
 }

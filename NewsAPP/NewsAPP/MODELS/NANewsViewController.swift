@@ -115,7 +115,7 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
 
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        searchController.searchBar.scopeButtonTitles = ["news", "Covid"]
+        searchController.searchBar.scopeButtonTitles = ["news", "Apple", "Samsung"]
         searchController.searchBar.delegate = self
     }
 

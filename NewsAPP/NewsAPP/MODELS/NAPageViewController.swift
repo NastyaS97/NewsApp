@@ -62,4 +62,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         vc?.index = index
         return vc
     }
+
+
+    @IBAction func shareButtonTapped(_ sender: UIBarButtonItem) {
+        let text = "Please, chose what you want"
+        guard let url = URL(string: "bbc.com") else { return }
+        let activityController = UIActivityViewController(activityItems: [text, url], applicationActivities: nil)
+
+        self.present(activityController, animated: true)
+    }
 }

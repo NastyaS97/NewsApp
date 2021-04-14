@@ -50,12 +50,24 @@ class NALocationViewController: UIViewController {
         case "Sunny":
             weatherImage.image = UIImage(named: "Sunny")
             background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
+        case "Сlear sky":
+            weatherImage.image = UIImage(named: "ClearSky")
+            background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
         default:
             weatherImage.image = UIImage(named: "Cloudy")
             background.backgroundColor = UIColor(red: 0.42, green: 0.55, blue: 0.71, alpha: 1.0)
         }
     }
+
+    @IBAction func shareButtonTapped(_ sender: UIBarButtonItem) {
+        let text = "Please, chose what you want"
+        guard let url = URL(string: "bbc.com") else { return }
+        let activityController = UIActivityViewController(activityItems: [text, url], applicationActivities: nil)
+
+        self.present(activityController, animated: true)
+    }
 }
+
 
 extension String {
     func capitalizingFirstLetter() -> String {
