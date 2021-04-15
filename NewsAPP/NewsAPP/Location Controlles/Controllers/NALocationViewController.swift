@@ -50,7 +50,7 @@ class NALocationViewController: UIViewController {
         case "Sunny":
             weatherImage.image = UIImage(named: "Sunny")
             background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
-        case "Сlear sky":
+        case "Сlearsky":
             weatherImage.image = UIImage(named: "ClearSky")
             background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
         default:

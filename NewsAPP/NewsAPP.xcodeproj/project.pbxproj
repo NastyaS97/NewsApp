@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E03E2AC0262729180072F6CA /* NAAboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2ABF262729180072F6CA /* NAAboutUsController.swift */; };
+		E03E2ACE26285B620072F6CA /* NANewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2ACD26285B620072F6CA /* NANewsModel.swift */; };
+		E03E2AD226285B8C0072F6CA /* NAApiConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AD126285B8C0072F6CA /* NAApiConnection.swift */; };
+		E03E2AD526285BB50072F6CA /* NANewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AD426285BB50072F6CA /* NANewsViewController.swift */; };
+		E03E2AD826285BE00072F6CA /* NAPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AD726285BE00072F6CA /* NAPageViewController.swift */; };
+		E03E2ADB26285C070072F6CA /* NAOneNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2ADA26285C070072F6CA /* NAOneNewsViewController.swift */; };
+		E03E2AE2262864580072F6CA /* NAOneboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AE1262864580072F6CA /* NAOneboardingViewController.swift */; };
+		E03E2AEA26286FA70072F6CA /* NAOnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AE926286FA70072F6CA /* NAOnboardingSlide.swift */; };
+		E03E2AEF262872AC0072F6CA /* NAOnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AEE262872AC0072F6CA /* NAOnboardingViewCell.swift */; };
 		E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52AD26250EE50062CB0E /* NALocationViewController.swift */; };
 		E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */; };
 		E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52BA2625D5B40062CB0E /* NAShedule.swift */; };
@@ -21,11 +29,6 @@
 		E0883A32260CE650005CE323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0883A30260CE650005CE323 /* Main.storyboard */; };
 		E0883A34260CE651005CE323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0883A33260CE651005CE323 /* Assets.xcassets */; };
 		E0883A37260CE652005CE323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0883A35260CE652005CE323 /* LaunchScreen.storyboard */; };
-		E0883A40260CE6C6005CE323 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A3F260CE6C6005CE323 /* NewsModel.swift */; };
-		E0883A43260CF360005CE323 /* NAApiConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A42260CF360005CE323 /* NAApiConnection.swift */; };
-		E0883A47260D00AA005CE323 /* NANewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0883A46260D00AA005CE323 /* NANewsViewController.swift */; };
-		E09E8C532610B28D00FA158A /* NAOneNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C522610B28D00FA158A /* NAOneNewsViewController.swift */; };
-		E09E8C562610C5E500FA158A /* NAPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C552610C5E500FA158A /* NAPageViewController.swift */; };
 		E09E8C5A2610E39300FA158A /* NAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C592610E39300FA158A /* NAButtonView.swift */; };
 		E09E8C632610EB4200FA158A /* NATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C622610EB4200FA158A /* NATabBar.swift */; };
 		E09E8C672610EDFF00FA158A /* NARoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C662610EDFF00FA158A /* NARoundImageView.swift */; };
@@ -33,6 +36,14 @@
 
 /* Begin PBXFileReference section */
 		E03E2ABF262729180072F6CA /* NAAboutUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAboutUsController.swift; sourceTree = "<group>"; };
+		E03E2ACD26285B620072F6CA /* NANewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NANewsModel.swift; sourceTree = "<group>"; };
+		E03E2AD126285B8C0072F6CA /* NAApiConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAApiConnection.swift; sourceTree = "<group>"; };
+		E03E2AD426285BB50072F6CA /* NANewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NANewsViewController.swift; sourceTree = "<group>"; };
+		E03E2AD726285BE00072F6CA /* NAPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPageViewController.swift; sourceTree = "<group>"; };
+		E03E2ADA26285C070072F6CA /* NAOneNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOneNewsViewController.swift; sourceTree = "<group>"; };
+		E03E2AE1262864580072F6CA /* NAOneboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOneboardingViewController.swift; sourceTree = "<group>"; };
+		E03E2AE926286FA70072F6CA /* NAOnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOnboardingSlide.swift; sourceTree = "<group>"; };
+		E03E2AEE262872AC0072F6CA /* NAOnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOnboardingViewCell.swift; sourceTree = "<group>"; };
 		E06B52AD26250EE50062CB0E /* NALocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALocationViewController.swift; sourceTree = "<group>"; };
 		E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACollectionWithTimeTable.swift; sourceTree = "<group>"; };
 		E06B52BA2625D5B40062CB0E /* NAShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAShedule.swift; sourceTree = "<group>"; };
@@ -48,11 +59,6 @@
 		E0883A33260CE651005CE323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0883A36260CE652005CE323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0883A38260CE652005CE323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0883A3F260CE6C6005CE323 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		E0883A42260CF360005CE323 /* NAApiConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAApiConnection.swift; sourceTree = "<group>"; };
-		E0883A46260D00AA005CE323 /* NANewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NANewsViewController.swift; sourceTree = "<group>"; };
-		E09E8C522610B28D00FA158A /* NAOneNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOneNewsViewController.swift; sourceTree = "<group>"; };
-		E09E8C552610C5E500FA158A /* NAPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPageViewController.swift; sourceTree = "<group>"; };
 		E09E8C592610E39300FA158A /* NAButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAButtonView.swift; sourceTree = "<group>"; };
 		E09E8C622610EB4200FA158A /* NATabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATabBar.swift; sourceTree = "<group>"; };
 		E09E8C662610EDFF00FA158A /* NARoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NARoundImageView.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		E03E2AA3262711990072F6CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E06B52C02625D6170062CB0E /* NASheduleStorage.swift */,
 				E03E2AA6262712790072F6CA /* Animation */,
 				E03E2AA4262711BF0072F6CA /* Cell */,
 			);
@@ -131,35 +138,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E03E2AAE262713200072F6CA /* News Controlles */ = {
-			isa = PBXGroup;
-			children = (
-				E03E2AB02627136D0072F6CA /* Controllers */,
-				E03E2AAF262713520072F6CA /* Parsing */,
-				E09E8C4F2610ABEA00FA158A /* Models */,
-			);
-			name = "News Controlles";
-			path = MODELS;
-			sourceTree = "<group>";
-		};
-		E03E2AAF262713520072F6CA /* Parsing */ = {
-			isa = PBXGroup;
-			children = (
-				E0883A42260CF360005CE323 /* NAApiConnection.swift */,
-			);
-			name = Parsing;
-			sourceTree = "<group>";
-		};
-		E03E2AB02627136D0072F6CA /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E0883A46260D00AA005CE323 /* NANewsViewController.swift */,
-				E09E8C522610B28D00FA158A /* NAOneNewsViewController.swift */,
-				E09E8C552610C5E500FA158A /* NAPageViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		E03E2AB5262713E90072F6CA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,9 +162,80 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		E03E2AC926285B030072F6CA /* News Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2ACC26285B440072F6CA /* Models */,
+				E03E2ACB26285B350072F6CA /* Parsing */,
+				E03E2ACA26285B1C0072F6CA /* Controllers */,
+				E03E2AD426285BB50072F6CA /* NANewsViewController.swift */,
+				E03E2AD726285BE00072F6CA /* NAPageViewController.swift */,
+				E03E2ADA26285C070072F6CA /* NAOneNewsViewController.swift */,
+			);
+			path = "News Controllers";
+			sourceTree = "<group>";
+		};
+		E03E2ACA26285B1C0072F6CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E03E2ACB26285B350072F6CA /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2AD126285B8C0072F6CA /* NAApiConnection.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		E03E2ACC26285B440072F6CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2ACD26285B620072F6CA /* NANewsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E03E2ADE26285CDA0072F6CA /* Onboarding Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2AED262872990072F6CA /* Cell */,
+				E03E2AE826286F930072F6CA /* Controllers */,
+				E03E2AE726286F870072F6CA /* Models */,
+			);
+			path = "Onboarding Controllers";
+			sourceTree = "<group>";
+		};
+		E03E2AE726286F870072F6CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2AE926286FA70072F6CA /* NAOnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E03E2AE826286F930072F6CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2AE1262864580072F6CA /* NAOneboardingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E03E2AED262872990072F6CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E03E2AEE262872AC0072F6CA /* NAOnboardingViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E06B52B82625D57B0062CB0E /* Collection Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E03E2AA3262711990072F6CA /* Views */,
 				E03E2AA12627113E0072F6CA /* Controllers */,
 				E03E2AA0262711300072F6CA /* Features */,
 				E06B52B92625D5860062CB0E /* ModelShedule */,
@@ -197,9 +246,7 @@
 		E06B52B92625D5860062CB0E /* ModelShedule */ = {
 			isa = PBXGroup;
 			children = (
-				E06B52C02625D6170062CB0E /* NASheduleStorage.swift */,
 				E06B52BA2625D5B40062CB0E /* NAShedule.swift */,
-				E03E2AA3262711990072F6CA /* Views */,
 			);
 			path = ModelShedule;
 			sourceTree = "<group>";
@@ -232,9 +279,10 @@
 		E0883A29260CE650005CE323 /* NewsAPP */ = {
 			isa = PBXGroup;
 			children = (
+				E03E2ADE26285CDA0072F6CA /* Onboarding Controllers */,
 				E03E2AA9262712C10072F6CA /* Common */,
+				E03E2AC926285B030072F6CA /* News Controllers */,
 				E06B52B82625D57B0062CB0E /* Collection Controller */,
-				E03E2AAE262713200072F6CA /* News Controlles */,
 				E09E8C6A2610F2B500FA158A /* Location Controlles */,
 				E03E2ABD262728F40072F6CA /* AboutUs controllers */,
 				E081E95E2610FFE300C3A831 /* Extension */,
@@ -242,14 +290,6 @@
 				E0883A38260CE652005CE323 /* Info.plist */,
 			);
 			path = NewsAPP;
-			sourceTree = "<group>";
-		};
-		E09E8C4F2610ABEA00FA158A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E0883A3F260CE6C6005CE323 /* NewsModel.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		E09E8C6A2610F2B500FA158A /* Location Controlles */ = {
@@ -376,23 +416,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06B52C42625D9740062CB0E /* NAContextCell.swift in Sources */,
+				E03E2ADB26285C070072F6CA /* NAOneNewsViewController.swift in Sources */,
 				E06B52CD2625EAD40062CB0E /* NAResizableLayout.swift in Sources */,
+				E03E2AEA26286FA70072F6CA /* NAOnboardingSlide.swift in Sources */,
 				E03E2AC0262729180072F6CA /* NAAboutUsController.swift in Sources */,
 				E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */,
 				E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */,
+				E03E2AD226285B8C0072F6CA /* NAApiConnection.swift in Sources */,
 				E09E8C632610EB4200FA158A /* NATabBar.swift in Sources */,
 				E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */,
-				E09E8C562610C5E500FA158A /* NAPageViewController.swift in Sources */,
+				E03E2AEF262872AC0072F6CA /* NAOnboardingViewCell.swift in Sources */,
 				E09E8C5A2610E39300FA158A /* NAButtonView.swift in Sources */,
+				E03E2ACE26285B620072F6CA /* NANewsModel.swift in Sources */,
 				E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */,
 				E09E8C672610EDFF00FA158A /* NARoundImageView.swift in Sources */,
-				E0883A40260CE6C6005CE323 /* NewsModel.swift in Sources */,
+				E03E2AE2262864580072F6CA /* NAOneboardingViewController.swift in Sources */,
 				E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */,
-				E0883A47260D00AA005CE323 /* NANewsViewController.swift in Sources */,
-				E09E8C532610B28D00FA158A /* NAOneNewsViewController.swift in Sources */,
+				E03E2AD826285BE00072F6CA /* NAPageViewController.swift in Sources */,
 				E06B52BE2625D5EF0062CB0E /* NAAccets.swift in Sources */,
-				E0883A43260CF360005CE323 /* NAApiConnection.swift in Sources */,
 				E06B52C12625D6170062CB0E /* NASheduleStorage.swift in Sources */,
+				E03E2AD526285BB50072F6CA /* NANewsViewController.swift in Sources */,
 				E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

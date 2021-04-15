@@ -10,7 +10,6 @@ import UIKit
 class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchResultsUpdating {
 
     // MARK: - variables
-    
     var newsFilter = [News]()
 
     let searchController = UISearchController()

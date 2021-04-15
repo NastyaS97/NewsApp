@@ -33,12 +33,12 @@ class NACollectionWithTimeTable: UICollectionViewController {
         shedules.count
     }
 
-//    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContexCell.reuseIdentifier,
-//                                                            for: indexPath) as? ContexCell else {
-//            return UICollectionViewCell()
-//        }
-//        cell.shedule = shedules[indexPath.item]
-//        return cell
-//    }
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContextCell.reuseIdentifier,
+                                                            for: indexPath) as? ContextCell else {
+            return UICollectionViewCell()
+        }
+        cell.shedule = shedules[indexPath.item]
+        return cell
+    }
 }
