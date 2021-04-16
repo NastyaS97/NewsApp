@@ -27,14 +27,8 @@
                                 <color key="textColor" red="1" green="0.55928957199999996" blue="0.40792474229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-ep-RIY">
-                                <rect key="frame" x="197" y="598" width="20" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="Y1Y-C7-ZUH"/>
-                                </constraints>
-                            </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launce" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-mT-9KI">
-                                <rect key="frame" x="20" y="184" width="374" height="332"/>
+                                <rect key="frame" x="20" y="184" width="374" height="512"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,13 +36,11 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBv-pz-0Dd" secondAttribute="bottom" constant="56" id="5nc-oe-xR7"/>
                             <constraint firstItem="YBv-pz-0Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="BZF-Hu-8aY"/>
-                            <constraint firstAttribute="bottom" secondItem="Cea-ep-RIY" secondAttribute="bottom" constant="232" id="Ezd-gP-TDD"/>
-                            <constraint firstItem="Cea-ep-RIY" firstAttribute="top" secondItem="eSZ-mT-9KI" secondAttribute="bottom" constant="82" id="Ojp-gP-wJM"/>
+                            <constraint firstItem="YBv-pz-0Dd" firstAttribute="top" secondItem="eSZ-mT-9KI" secondAttribute="bottom" constant="74" id="GOU-T2-Ekw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eSZ-mT-9KI" secondAttribute="trailing" constant="20" id="UVd-VN-tSK"/>
                             <constraint firstAttribute="trailing" secondItem="YBv-pz-0Dd" secondAttribute="trailing" id="b4c-nG-I8D"/>
                             <constraint firstItem="eSZ-mT-9KI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dEh-rr-9SV"/>
                             <constraint firstItem="eSZ-mT-9KI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="qt5-EX-haf"/>
-                            <constraint firstItem="Cea-ep-RIY" firstAttribute="centerX" secondItem="eSZ-mT-9KI" secondAttribute="centerX" id="uAk-Z2-2zW"/>
                         </constraints>
                     </view>
                 </viewController>

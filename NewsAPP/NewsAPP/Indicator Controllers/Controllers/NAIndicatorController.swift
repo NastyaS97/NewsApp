@@ -8,38 +8,38 @@
 import UIKit
 
 class IndicatorController: UIViewController {
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
 
-    var displayLink: CADisplayLink!
-    var loadingIndicator: UIView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setupIndicator()
-        displayLink = CADisplayLink(target: self, selector: #selector(handleAnimations))
-        displayLink.add(to: RunLoop.main, forMode: .default)
+    func showActivityIndicator() {
+        indicator?.startAnimating()
     }
 
-    var value: CGFloat = 0.0
-    var invert: Bool = false
-
-    @objc fileprivate func handleAnimations() {
-        invert ? (value -= 1) : (value += 1)
-        loadingIndicator.backgroundColor = UIColor.orange.withAlphaComponent(value/100)
-        if value > 100 || value < 0 {
-            invert = !invert
+    func hideActivityIndicator(){
+        if (indicator != nil){
+            indicator?.stopAnimating()
         }
-        print("")
     }
 
-//    fileprivate func setupIndicator() {
-//        view.addSubview(loadingIndicator)
-//        loadingIndicator.layer.cornerRadius = 50
-//        loadingIndicator.backgroundColor =  UIColor(named: "AccentColor")
-//        loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
-//        loadingIndicator.centerYAnchor.
-//        loadingIndicator
-//        loadingIndicator
-//        loadingIndicator
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.indicator.startAnimating()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.indicator.stopAnimating()
+        }
+    }
 }
