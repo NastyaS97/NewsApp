@@ -32,6 +32,7 @@
 		E09E8C5A2610E39300FA158A /* NAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C592610E39300FA158A /* NAButtonView.swift */; };
 		E09E8C632610EB4200FA158A /* NATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C622610EB4200FA158A /* NATabBar.swift */; };
 		E09E8C672610EDFF00FA158A /* NARoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E8C662610EDFF00FA158A /* NARoundImageView.swift */; };
+		E0A957A12629D2AF00DCB0FD /* NAIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A957A02629D2AF00DCB0FD /* NAIndicatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		E09E8C662610EDFF00FA158A /* NARoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NARoundImageView.swift; sourceTree = "<group>"; };
 		E09E8C712610F31900FA158A /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		E09E8C742610F32900FA158A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../Downloads/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		E0A957A02629D2AF00DCB0FD /* NAIndicatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAIndicatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 		E0883A29260CE650005CE323 /* NewsAPP */ = {
 			isa = PBXGroup;
 			children = (
+				E0A9579F2629D28700DCB0FD /* Indicator Controllers */,
 				E03E2ADE26285CDA0072F6CA /* Onboarding Controllers */,
 				E03E2AA9262712C10072F6CA /* Common */,
 				E03E2AC926285B030072F6CA /* News Controllers */,
@@ -320,6 +323,22 @@
 				E09E8C712610F31900FA158A /* SF-Pro-Display-Black.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E0A9579F2629D28700DCB0FD /* Indicator Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0A957A42629D2B600DCB0FD /* Controllers */,
+			);
+			path = "Indicator Controllers";
+			sourceTree = "<group>";
+		};
+		E0A957A42629D2B600DCB0FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0A957A02629D2AF00DCB0FD /* NAIndicatorController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +442,7 @@
 				E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */,
 				E081E95C2610FFD500C3A831 /* Date+Ex.swift in Sources */,
 				E03E2AD226285B8C0072F6CA /* NAApiConnection.swift in Sources */,
+				E0A957A12629D2AF00DCB0FD /* NAIndicatorController.swift in Sources */,
 				E09E8C632610EB4200FA158A /* NATabBar.swift in Sources */,
 				E0883A2B260CE650005CE323 /* AppDelegate.swift in Sources */,
 				E03E2AEF262872AC0072F6CA /* NAOnboardingViewCell.swift in Sources */,
