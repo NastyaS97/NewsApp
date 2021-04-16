@@ -11,11 +11,18 @@ class OneboardingController: UIViewController {
 
     // MARK: - variables
 
-    var weather = UIImage(contentsOfFile: "weather")
-    var tvProgram = UIImage(contentsOfFile: "tvProgram")
-    var breakingNews = UIImage(contentsOfFile: "breakingNews")
-
     var slides: [OnboardingSlide] = []
+
+    var currentPage = 0 {
+        didSet {
+            pageControl.currentPage = currentPage
+            if currentPage == slides.count - 1 {
+                nextButton.setTitle("Get Started", for: .normal)
+            } else {
+                nextButton.setTitle("Next", for: .normal)
+            }
+        }
+    }
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
@@ -24,15 +31,31 @@ class OneboardingController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        slides = [
-            OnboardingSlide(title: "Instant Updates", description: "Quick News Delivery at Your Sofastep", image: breakingNews!),
-            OnboardingSlide(title: "Current Weather", description: "You Don't need to install an additional APP for this", image: weather!),
-            OnboardingSlide(title: "News Programs", description: "Up-to-Dates News Shedules on The Most Popular Channels", image: tvProgram!)
-            ]
+        self.slides = [OnboardingSlide(title: "Instant Updates",
+                                       description: "Quick News Delivery at Your Sofastep",
+                                       image: UIImage(named: "breakingNews")),
+                       OnboardingSlide(title: "Current Weather",
+                                       description: "You Don't need to install an additional APP for this",
+                                       image: UIImage(named: "onboardingWeather")),
+                       OnboardingSlide(title: "News Programs",
+                                       description: "Up-to-Dates News Shedules on The Most Popular Channels",
+                                       image: UIImage(named: "tvProgram"))]
     }
 
     @IBAction func nextButtonClicked(_ sender: UIButton) {
+        if currentPage == slides.count - 1 {
+            let controller = storyboard?.instantiateViewController(identifier: "HomeTBC") as! UITabBarController // TODO Optional Binding
 
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+            present(controller, animated: true)
+        } else {
+            currentPage += 1
+            let indexPath = IndexPath(item: currentPage, section: 0)
+            collectionView.scrollToItem(at: indexPath,
+                                        at: .centeredHorizontally,
+                                        animated: true)
+        }
     }
 }
 
@@ -54,8 +77,13 @@ extension OneboardingController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width,
+                      height: collectionView.frame.height)
     }
 
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let width = scrollView.frame.width
+        currentPage = Int(scrollView.contentOffset.x / width)
+    }
 }
 
