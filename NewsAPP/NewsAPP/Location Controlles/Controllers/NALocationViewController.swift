@@ -4,6 +4,14 @@
 //
 //  Created by Настя Сойко on 13.04.21.
 //
+//
+//"id": 625144,
+//"name": "Minsk",
+//"state": "",
+//"country": "BY",
+//"coord": {
+//    "lon": 27.566668,
+//    "lat": 53.900002
 
 import UIKit
 
@@ -20,7 +28,9 @@ class NALocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&units=imperial&appid=714f89121c24133c60091ce6575bb2d0") else { return }
+        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?id=625144&appid=714f89121c24133c60091ce6575bb2d0") else { return }
+
+//        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&units=imperial&appid=714f89121c24133c60091ce6575bb2d0") else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data, error == nil {
                 do {
@@ -50,14 +60,17 @@ class NALocationViewController: UIViewController {
         case "Sunny":
             weatherImage.image = UIImage(named: "Sunny")
             background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
+        case "Scattered cloud":
+            weatherImage.image = UIImage(named: "Scattered")
+            background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
         case "Overcast clouds":
-            weatherImage.image = UIImage(named: "oneCloud")
+            weatherImage.image = UIImage(named: "Cloudy")
             background.backgroundColor = UIColor(red: 0.42, green: 0.55, blue: 0.71, alpha: 1.0)
         case "Сlearsky":
             weatherImage.image = UIImage(named: "ClearSky")
             background.backgroundColor = UIColor(red: 0.97, green: 0.78, blue: 0.35, alpha: 1.0)
         default:
-            weatherImage.image = UIImage(named: "Cloudy")
+            weatherImage.image = UIImage(named: "oneCloud")
             background.backgroundColor = UIColor(red: 0.42, green: 0.55, blue: 0.71, alpha: 1.0)
         }
     }

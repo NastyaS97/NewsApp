@@ -171,8 +171,8 @@
 				E03E2ACB26285B350072F6CA /* Parsing */,
 				E03E2ACA26285B1C0072F6CA /* Controllers */,
 				E03E2AD426285BB50072F6CA /* NANewsViewController.swift */,
-				E03E2AD726285BE00072F6CA /* NAPageViewController.swift */,
 				E03E2ADA26285C070072F6CA /* NAOneNewsViewController.swift */,
+				E03E2AD726285BE00072F6CA /* NAPageViewController.swift */,
 			);
 			path = "News Controllers";
 			sourceTree = "<group>";

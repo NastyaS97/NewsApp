@@ -21,26 +21,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsAPP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-pz-0Dd">
-                                <rect key="frame" x="135" y="770" width="279" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-pz-0Dd">
+                                <rect key="frame" x="0.0" y="610.5" width="414" height="195.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.55928957199999996" blue="0.40792474229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launce" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-mT-9KI">
-                                <rect key="frame" x="20" y="184" width="374" height="512"/>
+                                <rect key="frame" x="85" y="297.5" width="244" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="gCB-Lb-7k8"/>
+                                    <constraint firstAttribute="height" constant="301" id="qqh-ed-dLC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBv-pz-0Dd" secondAttribute="bottom" constant="56" id="5nc-oe-xR7"/>
-                            <constraint firstItem="YBv-pz-0Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="BZF-Hu-8aY"/>
-                            <constraint firstItem="YBv-pz-0Dd" firstAttribute="top" secondItem="eSZ-mT-9KI" secondAttribute="bottom" constant="74" id="GOU-T2-Ekw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eSZ-mT-9KI" secondAttribute="trailing" constant="20" id="UVd-VN-tSK"/>
-                            <constraint firstAttribute="trailing" secondItem="YBv-pz-0Dd" secondAttribute="trailing" id="b4c-nG-I8D"/>
-                            <constraint firstItem="eSZ-mT-9KI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dEh-rr-9SV"/>
-                            <constraint firstItem="eSZ-mT-9KI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="qt5-EX-haf"/>
+                            <constraint firstItem="eSZ-mT-9KI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Gvl-xp-qgL"/>
+                            <constraint firstItem="eSZ-mT-9KI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fk9-ex-C9A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBv-pz-0Dd" secondAttribute="bottom" constant="56" id="kpC-0Q-8As"/>
+                            <constraint firstItem="YBv-pz-0Dd" firstAttribute="top" secondItem="eSZ-mT-9KI" secondAttribute="bottom" constant="12" id="mTV-Bc-wJ7"/>
+                            <constraint firstItem="YBv-pz-0Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uTj-GN-Lh6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YBv-pz-0Dd" secondAttribute="trailing" id="xep-tS-aL6"/>
                         </constraints>
                     </view>
                 </viewController>
