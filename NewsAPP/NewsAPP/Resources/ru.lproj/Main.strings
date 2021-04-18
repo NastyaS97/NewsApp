@@ -1,0 +1,117 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "4oC-7p-Kvi"; */
+"4oC-7p-Kvi.normalTitle" = "Далее";
+
+/* Class = "UILabel"; text = "Sunny"; ObjectID = "5PE-ff-gcf"; */
+"5PE-ff-gcf.text" = "Солнечно";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "7PE-Xp-7eq"; */
+"7PE-Xp-7eq.text" = "Автор";
+
+/* Class = "UIButton"; normalTitle = "GitHub"; ObjectID = "86c-gs-L3i"; */
+"86c-gs-L3i.normalTitle" = "GitHub";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "8XH-Me-ave"; */
+"8XH-Me-ave.title" = "Выбрать";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "AA5-Yh-sgh"; */
+"AA5-Yh-sgh.title" = "Выбрать";
+
+/* Class = "UITabBarItem"; title = "ScrollNews"; ObjectID = "AdD-uk-CHE"; */
+"AdD-uk-CHE.title" = "Просмотр всех новосте";
+
+/* Class = "UIButton"; normalTitle = "YouTube"; ObjectID = "CE9-1f-D6f"; */
+"CE9-1f-D6f.normalTitle" = "YouTube";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "F2Z-SD-EL9"; */
+"F2Z-SD-EL9.text" = "Заголовок";
+
+/* Class = "UIButton"; normalTitle = "LinkedIn"; ObjectID = "IDz-I9-IhA"; */
+"IDz-I9-IhA.normalTitle" = "LinkedIn";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "JMZ-pr-Nlb"; */
+"JMZ-pr-Nlb.title" = "Выбрать";
+
+/* Class = "UIButton"; normalTitle = "Go to Safari"; ObjectID = "K1U-Ys-XfT"; */
+"K1U-Ys-XfT.normalTitle" = "Отобразить в браузере";
+
+/* Class = "UINavigationItem"; title = "You can see the shedule of news"; ObjectID = "L92-AQ-eYj"; */
+"L92-AQ-eYj.title" = "Вы можете видеть расписание всех новостных программа";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Lym-4w-5bN"; */
+"Lym-4w-5bN.text" = "Заголовок";
+
+/* Class = "UIButton"; normalTitle = "Email"; ObjectID = "N70-hD-ryw"; */
+"N70-hD-ryw.normalTitle" = "Почта";
+
+/* Class = "UINavigationItem"; title = "Current Weather"; ObjectID = "QFd-fO-0nu"; */
+"QFd-fO-0nu.title" = "Текущая Погода";
+
+/* Class = "UINavigationItem"; title = "Description"; ObjectID = "Qjm-gW-xuw"; */
+"Qjm-gW-xuw.title" = "Описание";
+
+/* Class = "UILabel"; text = "Belarus, Minsk"; ObjectID = "RaH-6w-IGo"; */
+"RaH-6w-IGo.text" = "Беларусь, Минск";
+
+/* Class = "UINavigationItem"; title = "Description"; ObjectID = "TEr-nX-92T"; */
+"TEr-nX-92T.title" = "Описание";
+
+/* Class = "UINavigationItem"; title = "Descripton"; ObjectID = "YDR-b6-fSq"; */
+"YDR-b6-fSq.title" = "Описание";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "ZbP-yT-6DL"; */
+"ZbP-yT-6DL.text" = "Время";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "aMU-fn-O72"; */
+"aMU-fn-O72.text" = "Заголовок";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "bcM-PK-lda"; */
+"bcM-PK-lda.text" = "Описание";
+
+/* Class = "UILabel"; text = "Published at:"; ObjectID = "cLn-cw-Oop"; */
+"cLn-cw-Oop.text" = "Опубликовано:";
+
+/* Class = "UIBarButtonItem"; title = "return"; ObjectID = "cUA-Tg-9Sr"; */
+"cUA-Tg-9Sr.title" = "возврат";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "dBi-Hc-KpJ"; */
+"dBi-Hc-KpJ.text" = "Заголовок";
+
+/* Class = "UIBarButtonItem"; title = "Return to menu"; ObjectID = "eFt-64-2p9"; */
+"eFt-64-2p9.title" = "Возврат к меню";
+
+/* Class = "UILabel"; text = "75"; ObjectID = "f5s-Jq-NfH"; */
+"f5s-Jq-NfH.text" = "75";
+
+/* Class = "UINavigationItem"; title = "Information"; ObjectID = "hsB-iK-nsq"; */
+"hsB-iK-nsq.title" = "Информация";
+
+/* Class = "UIBarButtonItem"; title = "Return to menu"; ObjectID = "j3y-Id-zOk"; */
+"j3y-Id-zOk.title" = "Возврат к меню";
+
+/* Class = "UIButton"; normalTitle = "Telephone"; ObjectID = "kSX-4v-Lsq"; */
+"kSX-4v-Lsq.normalTitle" = "Телефон для связи";
+
+/* Class = "UIBarButtonItem"; title = "return"; ObjectID = "n7B-0i-NsL"; */
+"n7B-0i-NsL.title" = "назад";
+
+/* Class = "UITabBarItem"; title = "Weather"; ObjectID = "ne1-1m-q6C"; */
+"ne1-1m-q6C.title" = "Погода";
+
+/* Class = "UIBarButtonItem"; title = "return"; ObjectID = "oT9-y9-hIg"; */
+"oT9-y9-hIg.title" = "назад";
+
+/* Class = "UIBarButtonItem"; title = "Return to menu"; ObjectID = "q7b-jt-U1L"; */
+"q7b-jt-U1L.title" = "Возврат к меню";
+
+/* Class = "UILabel"; text = "Instant updates"; ObjectID = "qgr-lF-Taq"; */
+"qgr-lF-Taq.text" = "Мгновенное обновление";
+
+/* Class = "UILabel"; text = "Quick News Delivery at Your Sofastep"; ObjectID = "tkf-mz-qbT"; */
+"tkf-mz-qbT.text" = "Доставка свежих новостей не вставая";
+
+/* Class = "UILabel"; text = "Lecture"; ObjectID = "uLd-BU-8Bl"; */
+"uLd-BU-8Bl.text" = "Доклад";
+
+/* Class = "UILabel"; text = "F"; ObjectID = "uiW-mx-BfK"; */
+"uiW-mx-BfK.text" = "F";
