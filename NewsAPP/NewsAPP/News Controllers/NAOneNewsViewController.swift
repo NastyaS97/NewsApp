@@ -65,7 +65,7 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     func showAlert() {
         let alert = UIAlertController(title: "Are you agree? Press OK to confirm the transition", message: "OK", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Are you agree? Press OK to confirm the transition", style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
             if let url = URL(string: self.selectedNews.url) {
                 let safariVC = SFSafariViewController(url: url)
                 safariVC.delegate = self

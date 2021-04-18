@@ -281,9 +281,9 @@
 		E0883A29260CE650005CE323 /* NewsAPP */ = {
 			isa = PBXGroup;
 			children = (
+				E03E2AA9262712C10072F6CA /* Common */,
 				E0A9579F2629D28700DCB0FD /* Indicator Controllers */,
 				E03E2ADE26285CDA0072F6CA /* Onboarding Controllers */,
-				E03E2AA9262712C10072F6CA /* Common */,
 				E03E2AC926285B030072F6CA /* News Controllers */,
 				E06B52B82625D57B0062CB0E /* Collection Controller */,
 				E09E8C6A2610F2B500FA158A /* Location Controlles */,

@@ -531,41 +531,265 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDz-I9-IhA">
-                                <rect key="frame" x="166" y="204" width="166" height="59"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" id="sVR-PH-g9u">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LinkdIn"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1mH-Cj-EFq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="uzD-v0-IhD"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDz-I9-IhA" customClass="ButtonView" customModule="NewsAPP" customModuleProvider="target">
+                                <rect key="frame" x="42" y="419" width="334" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.80859772789999995" blue="0.71653670089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="2yh-nl-tbe"/>
+                                    <constraint firstAttribute="height" constant="72" id="90v-4X-HWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="LinkedIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.85382036579999998" blue="0.73433723529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLinkdInButtonWasTapped:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="FYm-ks-Hzc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d54-r6-lrk">
-                                <rect key="frame" x="147" y="271" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="YouTube"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkedIn" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-es-yci">
+                                <rect key="frame" x="86" y="434" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Byp-Zq-4QB"/>
+                                    <constraint firstAttribute="width" constant="48" id="d6n-Ri-EhS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUs" translatesAutoresizingMaskIntoConstraints="NO" id="Kz1-kw-Ycv">
+                                <rect key="frame" x="0.0" y="140" width="414" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="Hje-dR-xIJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86c-gs-L3i" customClass="ButtonView" customModule="NewsAPP" customModuleProvider="target">
+                                <rect key="frame" x="42" y="494" width="334" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.80859772789999995" blue="0.71653670089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="isL-D1-8UN"/>
+                                    <constraint firstAttribute="height" constant="72" id="lnP-WU-0v2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="GitHub">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.85382036579999998" blue="0.73433723529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onYouTubeButtonWasTapped:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="pVE-hD-aaV"/>
+                                    <action selector="onGitHub:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="evj-n7-ewK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpS-TF-RcZ">
-                                <rect key="frame" x="147" y="361" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="telephone"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N70-hD-ryw" customClass="ButtonView" customModule="NewsAPP" customModuleProvider="target">
+                                <rect key="frame" x="42" y="569" width="334" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.80859772789999995" blue="0.71653670089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="41j-dD-1BB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="kKm-Po-V15"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.85382036579999998" blue="0.73433723529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="callNumberWithPhoneNumber:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="yHf-K0-CrM"/>
+                                    <action selector="insertEmail" destination="z2Z-aT-pC2" eventType="touchUpInside" id="Qs4-g9-Stw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-HC-UTx">
-                                <rect key="frame" x="147" y="433" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="email"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitHub" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-g5-Mj2">
+                                <rect key="frame" x="92" y="507" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8V9-ca-s8m"/>
+                                    <constraint firstAttribute="width" constant="48" id="lsW-dR-b0B"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="vjg-PB-C1M">
+                                <rect key="frame" x="92" y="582" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2cD-gM-mLu"/>
+                                    <constraint firstAttribute="width" constant="48" id="iHl-B5-Pxq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSX-4v-Lsq" customClass="ButtonView" customModule="NewsAPP" customModuleProvider="target">
+                                <rect key="frame" x="42" y="644" width="334" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.80859772789999995" blue="0.71653670089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="M6M-MD-K6v"/>
+                                    <constraint firstAttribute="height" constant="72" id="vyE-zE-ZlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Telephone">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.85382036579999998" blue="0.73433723529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="insertEmail" destination="z2Z-aT-pC2" eventType="touchUpInside" id="NnN-q9-8BM"/>
+                                    <action selector="callNumberWithPhoneNumber:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="L7A-zY-cIk"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-7b-Wdd">
+                                <rect key="frame" x="92" y="657" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="MuO-f3-qnf"/>
+                                    <constraint firstAttribute="height" constant="48" id="qFW-zF-b3s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE9-1f-D6f" customClass="ButtonView" customModule="NewsAPP" customModuleProvider="target">
+                                <rect key="frame" x="42" y="719" width="334" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.80859772789999995" blue="0.71653670089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="bP8-ab-94t"/>
+                                    <constraint firstAttribute="height" constant="72" id="fAZ-fh-teu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="YouTube">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.85382036579999998" blue="0.73433723529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onYouTubeButtonWasTapped:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="AhU-lD-1i7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youTube" translatesAutoresizingMaskIntoConstraints="NO" id="Tkr-HB-zYn">
+                                <rect key="frame" x="92" y="732" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="3j1-qw-1am"/>
+                                    <constraint firstAttribute="height" constant="48" id="8aL-OP-QS6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jtR-xt-zRT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vjg-PB-C1M" secondAttribute="trailing" constant="254" id="0jg-WT-8KW"/>
+                            <constraint firstItem="N70-hD-ryw" firstAttribute="top" secondItem="86c-gs-L3i" secondAttribute="bottom" constant="3" id="3qn-AB-28a"/>
+                            <constraint firstItem="sVR-PH-g9u" firstAttribute="trailing" secondItem="jtR-xt-zRT" secondAttribute="trailing" id="7cC-N6-emr"/>
+                            <constraint firstItem="ZFW-7b-Wdd" firstAttribute="top" secondItem="N70-hD-ryw" secondAttribute="bottom" constant="16" id="B4s-tc-PiH"/>
+                            <constraint firstItem="Kz1-kw-Ycv" firstAttribute="top" secondItem="jtR-xt-zRT" secondAttribute="top" id="FKC-Hd-Egh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CE9-1f-D6f" secondAttribute="trailing" constant="18" id="Htj-Zf-26w"/>
+                            <constraint firstItem="CE9-1f-D6f" firstAttribute="top" secondItem="kSX-4v-Lsq" secondAttribute="bottom" constant="3" id="Otr-jR-Lgf"/>
+                            <constraint firstItem="kSX-4v-Lsq" firstAttribute="leading" secondItem="ujo-t9-Jox" secondAttribute="leadingMargin" constant="22" id="Pfu-Ln-omg"/>
+                            <constraint firstItem="86c-gs-L3i" firstAttribute="leading" secondItem="ujo-t9-Jox" secondAttribute="leadingMargin" constant="22" id="QKY-nV-S0F"/>
+                            <constraint firstItem="sVR-PH-g9u" firstAttribute="top" secondItem="jtR-xt-zRT" secondAttribute="top" id="TFz-bX-NhH"/>
+                            <constraint firstItem="IDz-I9-IhA" firstAttribute="leading" secondItem="ujo-t9-Jox" secondAttribute="leadingMargin" constant="22" id="TgL-GA-4em"/>
+                            <constraint firstItem="IDz-I9-IhA" firstAttribute="top" secondItem="Kz1-kw-Ycv" secondAttribute="bottom" constant="65" id="WIY-wn-Ud6"/>
+                            <constraint firstItem="N70-hD-ryw" firstAttribute="leading" secondItem="ujo-t9-Jox" secondAttribute="leadingMargin" constant="22" id="WP6-ay-gfR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IDz-I9-IhA" secondAttribute="trailing" constant="18" id="XX8-eI-1no"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="86c-gs-L3i" secondAttribute="trailing" constant="18" id="Xkp-FT-Tva"/>
+                            <constraint firstItem="sVR-PH-g9u" firstAttribute="leading" secondItem="jtR-xt-zRT" secondAttribute="leading" id="YeT-f0-TUb"/>
+                            <constraint firstItem="0ca-g5-Mj2" firstAttribute="top" secondItem="IDz-I9-IhA" secondAttribute="bottom" constant="16" id="a05-Xu-p4C"/>
+                            <constraint firstItem="kSX-4v-Lsq" firstAttribute="top" secondItem="N70-hD-ryw" secondAttribute="bottom" constant="3" id="akY-cS-wSJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HmA-es-yci" secondAttribute="trailing" constant="260" id="dgt-mc-Q8t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kSX-4v-Lsq" secondAttribute="trailing" constant="18" id="eJI-rQ-J9z"/>
+                            <constraint firstItem="CE9-1f-D6f" firstAttribute="leading" secondItem="ujo-t9-Jox" secondAttribute="leadingMargin" constant="22" id="ep1-O0-PEh"/>
+                            <constraint firstItem="HmA-es-yci" firstAttribute="top" secondItem="Kz1-kw-Ycv" secondAttribute="bottom" constant="80" id="f1u-hf-nb9"/>
+                            <constraint firstItem="86c-gs-L3i" firstAttribute="top" secondItem="IDz-I9-IhA" secondAttribute="bottom" constant="3" id="k7S-10-DHc"/>
+                            <constraint firstItem="Tkr-HB-zYn" firstAttribute="top" secondItem="kSX-4v-Lsq" secondAttribute="bottom" constant="16" id="kdP-nP-vRa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N70-hD-ryw" secondAttribute="trailing" constant="18" id="oA8-gV-WaI"/>
+                            <constraint firstItem="vjg-PB-C1M" firstAttribute="top" secondItem="86c-gs-L3i" secondAttribute="bottom" constant="16" id="qju-0o-GRe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZFW-7b-Wdd" secondAttribute="trailing" constant="254" id="tt6-qy-hoy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tkr-HB-zYn" secondAttribute="trailing" constant="254" id="uiS-6n-ysN"/>
+                            <constraint firstItem="sVR-PH-g9u" firstAttribute="bottom" secondItem="jtR-xt-zRT" secondAttribute="bottom" id="up3-C3-7Fa"/>
+                            <constraint firstItem="Kz1-kw-Ycv" firstAttribute="trailing" secondItem="jtR-xt-zRT" secondAttribute="trailing" id="xMM-AS-xET"/>
+                            <constraint firstItem="Kz1-kw-Ycv" firstAttribute="leading" secondItem="jtR-xt-zRT" secondAttribute="leading" id="xUH-WB-KDf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ca-g5-Mj2" secondAttribute="trailing" constant="254" id="ySq-dP-8W9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Information" leftItemsSupplementBackButton="YES" id="hsB-iK-nsq">
                         <barButtonItem key="backBarButtonItem" title="return" id="cUA-Tg-9Sr"/>
@@ -770,19 +994,40 @@
         <designable name="4oC-7p-Kvi">
             <size key="intrinsicContentSize" width="32" height="30"/>
         </designable>
+        <designable name="86c-gs-L3i">
+            <size key="intrinsicContentSize" width="69" height="36"/>
+        </designable>
+        <designable name="CE9-1f-D6f">
+            <size key="intrinsicContentSize" width="85" height="36"/>
+        </designable>
+        <designable name="IDz-I9-IhA">
+            <size key="intrinsicContentSize" width="84" height="36"/>
+        </designable>
         <designable name="K1U-Ys-XfT">
             <size key="intrinsicContentSize" width="97" height="33"/>
+        </designable>
+        <designable name="N70-hD-ryw">
+            <size key="intrinsicContentSize" width="54" height="36"/>
+        </designable>
+        <designable name="kSX-4v-Lsq">
+            <size key="intrinsicContentSize" width="102" height="36"/>
         </designable>
     </designables>
     <resources>
         <image name="Source" width="25" height="21"/>
         <image name="Sunny" width="700" height="700"/>
+        <image name="contactUs" width="1190" height="646"/>
+        <image name="email" width="48" height="48"/>
+        <image name="gitHub" width="48" height="48"/>
         <image name="information" width="48" height="48"/>
+        <image name="linkedIn" width="48" height="48"/>
         <image name="main" width="48" height="48"/>
         <image name="scroll" width="48" height="48"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="telephone" width="48" height="48"/>
         <image name="weather" width="48" height="48"/>
+        <image name="youTube" width="48" height="48"/>
         <namedColor name="AccentColor-1">
             <color red="1" green="0.48600000143051147" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
