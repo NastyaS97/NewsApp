@@ -6,40 +6,39 @@
 //
 
 import UIKit
+import TransitionButton
 
 class IndicatorController: UIViewController {
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
 
-    func showActivityIndicator() {
-        indicator?.startAnimating()
+    let button = TransitionButton(frame: CGRect(x: 0, y: 250, width: 250, height: 50))
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        button.center = view.center
+        button.backgroundColor = UIColor(named: "UniversalColor")
+        button.setTitle("Let's start", for: .normal)
+        button.layer.cornerRadius = 12
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+
+        button.spinnerColor = .white
+
+        view.addSubview(button)
     }
 
-    func hideActivityIndicator(){
-        if (indicator != nil){
-            indicator?.stopAnimating()
-        }
-    }
+    @objc func didTapButton() {
+        button.startAnimation()
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now()+4) {
+            self.button.stopAnimation(animationStyle: .expand, revertAfterDelay: 1) {
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                    let controller = self.storyboard?.instantiateViewController(identifier: "OnboardingVC") // TODO Optional Binding
 
-        self.indicator.startAnimating()
-    }
+//                    controller?.modalPresentationStyle = .fullScreen
+//                    controller?.modalTransitionStyle = .flipHorizontal
+                    self.present(controller!, animated: true)
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.indicator.stopAnimating()
+                }
+            }
         }
     }
 }

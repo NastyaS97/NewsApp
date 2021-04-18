@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="izX-Pq-c0N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i8G-m4-H0T">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -205,28 +205,11 @@
                     <view key="view" contentMode="scaleToFill" id="Ucj-HA-jMR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pnU-v3-n4F">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="cE7-Xd-MJd"/>
-                                    <constraint firstAttribute="height" constant="100" id="h7e-of-9V6"/>
-                                </constraints>
-                                <color key="color" red="1" green="0.55439899849999996" blue="0.41800082599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </activityIndicatorView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xe4-A9-DXs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="pnU-v3-n4F" firstAttribute="centerX" secondItem="Ucj-HA-jMR" secondAttribute="centerX" id="8Xb-gp-Oa4"/>
-                            <constraint firstItem="pnU-v3-n4F" firstAttribute="centerY" secondItem="Ucj-HA-jMR" secondAttribute="centerY" id="ohE-JQ-aUB"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8XH-Me-ave"/>
                     <navigationItem key="navigationItem" id="l2Y-H3-zYl"/>
-                    <connections>
-                        <outlet property="indicator" destination="pnU-v3-n4F" id="tLm-7B-1Lf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omd-xc-fZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,7 +218,7 @@
         <!--Oneboarding Controller-->
         <scene sceneID="hx7-hq-RAU">
             <objects>
-                <viewController id="izX-Pq-c0N" customClass="OneboardingController" customModule="NewsAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingVC" id="izX-Pq-c0N" customClass="OneboardingController" customModule="NewsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1M7-4G-1oW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
