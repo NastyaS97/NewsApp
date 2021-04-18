@@ -24,6 +24,8 @@ class OneboardingController: UIViewController {
         }
     }
 
+    // MARK: - gui variables
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -42,6 +44,8 @@ class OneboardingController: UIViewController {
                                        image: UIImage(named: "tvProgram"))]
     }
 
+    // MARK: - actions
+
     @IBAction func nextButtonClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
             let controller = storyboard?.instantiateViewController(identifier: "HomeTBC") as! UITabBarController // TODO Optional Binding
@@ -59,6 +63,8 @@ class OneboardingController: UIViewController {
         }
     }
 }
+
+// MARK: - extension
 
 extension OneboardingController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

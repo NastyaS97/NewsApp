@@ -636,6 +636,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="insertEmail" destination="z2Z-aT-pC2" eventType="touchUpInside" id="Qs4-g9-Stw"/>
+                                    <action selector="insertEmail:" destination="z2Z-aT-pC2" eventType="touchUpInside" id="pcj-Vw-Lfh"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitHub" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-g5-Mj2">

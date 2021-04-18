@@ -18,8 +18,8 @@ class NAAboutUsController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [
-            UIColor.white.cgColor,
-            UIColor.systemOrange.cgColor
+            UIColor(red: 255 / 255, green: 124 / 255, blue: 98 / 255, alpha: 1).cgColor,
+            UIColor.white.cgColor
         ]
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
@@ -31,37 +31,60 @@ class NAAboutUsController: UIViewController {
     // MARK: - LinkedIn Action
 
     @IBAction func onLinkdInButtonWasTapped(_ sender: Any) {
-        showAlert()
 
-        UIApplication.shared.open(URL(string: "https://www.linkedin.com/in/anastasiya-s-1472b6132/")! as URL, options: [:], completionHandler: nil) // TODO check link
+        let alert = UIAlertController(title: "Are you agree?", message: "Press OK to confirm the transition", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            UIApplication.shared.open(URL(string: "https://www.linkedin.com/in/anastasiya-s-1472b6132/")! as URL, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("cancel")
+        }))
+        present(alert, animated: true)
     }
 
     // MARK: - YouTube Action
 
     @IBAction func onYouTubeButtonWasTapped(_ sender: Any) {
-        showAlert()
-
-        UIApplication.shared.open(URL(string: "https://www.youtube.com/channel/UCm2JSDHT_Ss2mq3gmne_iNQ")! as URL, options: [:], completionHandler: nil)
+        let alert = UIAlertController(title: "Are you agree?", message: "Press OK to confirm the transition", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            UIApplication.shared.open(URL(string: "https://www.youtube.com/channel/UCm2JSDHT_Ss2mq3gmne_iNQ")! as URL, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("cancel")
+        }))
+        present(alert, animated: true)
     }
 
     // MARK: - GitHub Action
 
     @IBAction func onGitHub(_ sender: Any) {
-        showAlert()
+        let alert = UIAlertController(title: "Are you agree?", message: "Press OK to confirm the transition", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
 
         UIApplication.shared.open(URL(string: "https://github.com/NastyaS97")! as URL, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("cancel")
+        }))
+        present(alert, animated: true)
     }
 
     // MARK: - Number Action
 
     @IBAction func callNumber(phoneNumber: String) {
-        showAlert()
+        let alert = UIAlertController(title: "Are you agree?", message: "Press OK to confirm the transition", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
 
         guard let url = URL(string: "telprompt://+375298573919"),
-            UIApplication.shared.canOpenURL(url) else {
+              UIApplication.shared.canOpenURL(url) else {
             return
         }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("cancel")
+        }))
+        present(alert, animated: true)
     }
 
     // MARK: - Email Action
@@ -71,11 +94,10 @@ class NAAboutUsController: UIViewController {
     }
 
     func showMailComposer() {
-        showAlert()
 
         guard MFMailComposeViewController.canSendMail() else {
-        return
-    }
+            return
+        }
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
         composer.setToRecipients(["nastya.soiko.97@gmail.com"])
@@ -86,6 +108,7 @@ class NAAboutUsController: UIViewController {
     }
 }
 
+// MARK: - extension
 
 extension NAAboutUsController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
@@ -107,15 +130,5 @@ extension NAAboutUsController: MFMailComposeViewControllerDelegate {
             print("default")
         }
         controller.dismiss(animated: true)
-    }
-
-    func showAlert() {
-        let alert = UIAlertController(title: "Are you agree? Press OK to confirm the transition", message: "OK", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
-            print("cancel")
-        }))
-        present(alert, animated: true)
     }
 }

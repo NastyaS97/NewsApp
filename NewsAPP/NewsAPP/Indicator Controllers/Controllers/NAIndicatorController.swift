@@ -10,6 +10,8 @@ import TransitionButton
 
 class IndicatorController: UIViewController {
 
+    // MARK: - variablea
+
     let button = TransitionButton(frame: CGRect(x: 0, y: 250, width: 250, height: 50))
 
     override func viewDidLoad() {
@@ -24,6 +26,8 @@ class IndicatorController: UIViewController {
 
         view.addSubview(button)
     }
+
+    // MARK: - actions with tapped button
 
     @objc func didTapButton() {
         button.startAnimation()

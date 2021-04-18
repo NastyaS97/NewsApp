@@ -34,8 +34,6 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9098039216, blue: 0.8392156863, alpha: 1)
 
-        setUpConstraints()
-
         self.labelTitle.text = selectedNews.title
         self.labelDescription.text = selectedNews.description
         self.publisheAtLabel.text = selectedNews.publishedAt
@@ -54,13 +52,6 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
 
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
-    }
-
-    func setUpConstraints() {
-        NSLayoutConstraint.activate([
-        omageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-        omageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
-        ])
     }
 
     func showAlert() {
