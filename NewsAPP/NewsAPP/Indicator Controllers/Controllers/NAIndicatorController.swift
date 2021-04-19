@@ -37,8 +37,6 @@ class IndicatorController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
                     let controller = self.storyboard?.instantiateViewController(identifier: "OnboardingVC") // TODO Optional Binding
 
-//                    controller?.modalPresentationStyle = .fullScreen
-//                    controller?.modalTransitionStyle = .flipHorizontal
                     self.present(controller!, animated: true)
 
                 }
