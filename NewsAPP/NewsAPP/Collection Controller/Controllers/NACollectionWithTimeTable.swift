@@ -24,7 +24,6 @@ class NACollectionWithTimeTable: UICollectionViewController {
 
         let backgroundView = UIImageView(image: Assets.image.background)
         collectionView?.backgroundView = backgroundView
-
         collectionView?.backgroundColor = .clear
         collectionView?.decelerationRate = .fast
     }
