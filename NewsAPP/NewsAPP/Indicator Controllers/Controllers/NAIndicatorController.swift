@@ -38,7 +38,6 @@ class IndicatorController: UIViewController {
                     let controller = self.storyboard?.instantiateViewController(identifier: "OnboardingVC") // TODO Optional Binding
 
                     self.present(controller!, animated: true)
-
                 }
             }
         }

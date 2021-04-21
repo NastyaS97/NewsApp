@@ -23,7 +23,6 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var publisheAtLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-
     @IBAction func safariButton(_ sender: Any) {
         showAlert()
     }
@@ -48,14 +47,17 @@ class OneNewsViewController: UIViewController, SFSafariViewControllerDelegate {
         }
     }
 
-    //MARK: - actions
+    //MARK: - actions with SafariPage
 
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
 
+    //MARK: - added alert
+
     func showAlert() {
-        let alert = UIAlertController(title: "Are you agree? Press OK to confirm the transition", message: "OK", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Are you agree? Press OK to confirm the transition",
+                                      message: "OK", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
             if let url = URL(string: self.selectedNews.url) {
                 let safariVC = SFSafariViewController(url: url)

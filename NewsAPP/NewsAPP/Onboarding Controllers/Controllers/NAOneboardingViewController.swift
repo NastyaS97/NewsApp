@@ -30,6 +30,8 @@ class OneboardingController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
 
+    // MARK: - life cycle func
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -15,10 +15,12 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
 
     let searchController = UISearchController()
 
-    @IBAction func refreshNewsControllerAction(_ sender: Any) {
+    // MARK: - refreshController
+
+    @IBAction func refreshNewsControllerAction(_ sender: UIRefreshControl) {
         loadNews {
             DispatchQueue.main.async {
-                self.refreshControl?.tintColor = .lightGray
+                self.refreshControl?.tintColor = .darkGray
                 self.refreshControl?.attributedTitle = NSAttributedString(string: "Update")
                 self.refreshControl?.addTarget(self, action: #selector(self.updateTable), for: .valueChanged)
             }
@@ -40,7 +42,6 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
                 self.tableView.reloadData()
             }
         }
-
         view.backgroundColor = UIColor(named: "AccentColor")
     }
 
@@ -74,6 +75,7 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
         cell.textLabel?.text = article.title
         cell.detailTextLabel?.text = article.content
         cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: article.urlToImage)!))
+        cell.contentMode = .center
 
         return cell
     }
@@ -95,13 +97,12 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
             } else {
                 selectedNews = articles[indexPath.row]
             }
-
             tableViewDetail!.selectedNews = selectedNews
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
 
-    //MARK: - actions
+    //MARK: - searchController
 
     func initsearchController() {
         searchController.loadViewIfNeeded()
@@ -127,6 +128,8 @@ class NewsViewController: UITableViewController, UISearchBarDelegate, UISearchRe
 
         filterForSearchTextAndScopeButton(searchText: searchText, scopeButton: scopeButton)
     }
+
+    //MARK: - filter for serch
 
     func filterForSearchTextAndScopeButton(searchText: String, scopeButton: String = "news") {
         newsFilter = articles.filter {

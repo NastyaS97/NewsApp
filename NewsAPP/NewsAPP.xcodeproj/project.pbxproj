@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -93,7 +93,6 @@
 				49412FD81AA7B1AF17E3FDC5 /* Pods-NewsAPP.debug.xcconfig */,
 				36EED1859533EAC3111629CF /* Pods-NewsAPP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -503,7 +502,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 

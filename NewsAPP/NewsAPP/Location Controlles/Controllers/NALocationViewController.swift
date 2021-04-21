@@ -30,7 +30,6 @@ class NALocationViewController: UIViewController {
         super.viewDidLoad()
         guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?id=625144&appid=714f89121c24133c60091ce6575bb2d0") else { return }
 
-//        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?zip=94040,us&units=imperial&appid=714f89121c24133c60091ce6575bb2d0") else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data, error == nil {
                 do {
@@ -83,7 +82,6 @@ class NALocationViewController: UIViewController {
         self.present(activityController, animated: true)
     }
 }
-
 
 extension String {
     func capitalizingFirstLetter() -> String {

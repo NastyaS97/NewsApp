@@ -9,15 +9,6 @@ import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
-    @IBAction func updateNewsPages(_ sender: Any) {
-        loadNews {
-            DispatchQueue.main.async {
-//                self.refreshControl?.endRefreshing()
-//                self.tableView.reloadData()
-            }
-        }
-    }
-
     //MARK: - life cycle
 
     override func viewDidLoad() {
@@ -35,18 +26,23 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
     func showViewController() {
         DispatchQueue.main.async {
             if let vc = self.pageViewController(for: 0) {
-                self.setViewControllers([vc], direction: .forward, animated: true, completion: nil)
+                self.setViewControllers([vc], direction: .forward,
+                                        animated: true)
             }
         }
     }
 
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let index = ((viewController as? OneNewsViewController)?.index ?? 0) - 1
+
         return self.pageViewController(for: index)
     }
 
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let index = ((viewController as? OneNewsViewController)?.index ?? 0) + 1
+
         return self.pageViewController(for: index)
     }
 
@@ -60,14 +56,17 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         let vc = storyboard?.instantiateViewController(withIdentifier: "oneNewsSID") as? OneNewsViewController
         vc?.selectedNews = articles[index]
         vc?.index = index
+        
         return vc
     }
 
+    //MARK: - action with tabbed on button
 
     @IBAction func shareButtonTapped(_ sender: UIBarButtonItem) {
         let text = "Please, chose what you want"
         guard let url = URL(string: "bbc.com") else { return }
-        let activityController = UIActivityViewController(activityItems: [text, url], applicationActivities: nil)
+        let activityController = UIActivityViewController(activityItems: [text, url],
+                                                          applicationActivities: nil)
 
         self.present(activityController, animated: true)
     }

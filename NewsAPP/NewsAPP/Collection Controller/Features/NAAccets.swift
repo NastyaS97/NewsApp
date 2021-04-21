@@ -19,7 +19,6 @@ struct Assets {
             return properties[member, default: UIImage()]
         }
     }
-
     static let image = Image()
 
     private init() {}
