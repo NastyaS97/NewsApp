@@ -1,16 +1,30 @@
 PODS:
+  - Alamofire (5.4.2)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SwiftyJSON (4.3.0)
   - TransitionButton (0.5.3)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - NVActivityIndicatorView
+  - SwiftyJSON (~> 4.0)
   - TransitionButton
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - NVActivityIndicatorView
+    - SwiftyJSON
     - TransitionButton
 
 SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 85763d8085a0f523e175d22da9b8fec253b627d2
+PODFILE CHECKSUM: 4bf3074ca7dc3a37ca502599736c9a7504ff4167
 
 COCOAPODS: 1.10.1

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="izX-Pq-c0N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r2b-Wp-27D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -914,12 +914,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="background" destination="Z0r-EI-Mge" id="Zvb-ZN-VF1"/>
-                        <outlet property="tempLabel" destination="f5s-Jq-NfH" id="hh4-pg-F15"/>
-                        <outlet property="weatherDescription" destination="5PE-ff-gcf" id="JYl-wv-iws"/>
-                        <outlet property="weatherImage" destination="UDF-gn-NOf" id="deR-4a-GCs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INr-nW-Ias" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -972,6 +966,116 @@
                 </barButtonItem>
             </objects>
             <point key="canvasLocation" x="1706" y="772"/>
+        </scene>
+        <!--Current Weather-->
+        <scene sceneID="MJm-Ji-ugP">
+            <objects>
+                <viewController id="r2b-Wp-27D" customClass="NAWeatherController" sceneMemberID="viewController">
+                    <view key="view" alpha="0.85000002384185791" contentMode="scaleToFill" id="bbA-r7-Uo7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bh-1a-hfZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="wbu-Ro-rV7">
+                                <rect key="frame" x="20" y="182" width="374" height="480"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3c-um-hNd">
+                                <rect key="frame" x="20" y="64" width="80.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="66i-bf-lkh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belarus, Minsk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJK-jp-dhb">
+                                <rect key="frame" x="0.0" y="762" width="414" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="LK5-bF-vxR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrN-SO-kaM">
+                                <rect key="frame" x="361" y="64" width="33" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="IGT-K6-kom"/>
+                                    <constraint firstAttribute="width" constant="33" id="kGR-VP-UU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="75" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jul-cn-yaM">
+                                <rect key="frame" x="108.5" y="64" width="250.5" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="PSW-7g-vG1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-Cf-iKF">
+                                <rect key="frame" x="0.0" y="805" width="414" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="auN-dY-rWP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1n2-Ix-hdb"/>
+                        <color key="backgroundColor" red="1" green="0.55928957199999996" blue="0.40792474229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8bh-1a-hfZ" firstAttribute="leading" secondItem="1n2-Ix-hdb" secondAttribute="leading" id="0qe-C2-4DC"/>
+                            <constraint firstItem="8bh-1a-hfZ" firstAttribute="trailing" secondItem="1n2-Ix-hdb" secondAttribute="trailing" id="A4I-8d-azs"/>
+                            <constraint firstItem="eJK-jp-dhb" firstAttribute="leading" secondItem="1n2-Ix-hdb" secondAttribute="leading" id="Bak-t2-ojE"/>
+                            <constraint firstAttribute="bottom" secondItem="8bh-1a-hfZ" secondAttribute="bottom" id="Bfe-Ve-FAN"/>
+                            <constraint firstItem="eJK-jp-dhb" firstAttribute="trailing" secondItem="1n2-Ix-hdb" secondAttribute="trailing" id="ClK-e1-29c"/>
+                            <constraint firstItem="wbu-Ro-rV7" firstAttribute="leading" secondItem="1n2-Ix-hdb" secondAttribute="leading" constant="20" id="Drg-2a-cVo"/>
+                            <constraint firstItem="CrN-SO-kaM" firstAttribute="leading" secondItem="Jul-cn-yaM" secondAttribute="trailing" constant="2" id="Mx1-n9-WOe"/>
+                            <constraint firstItem="raZ-Cf-iKF" firstAttribute="trailing" secondItem="1n2-Ix-hdb" secondAttribute="trailing" id="OUl-JK-P5q"/>
+                            <constraint firstItem="raZ-Cf-iKF" firstAttribute="top" secondItem="eJK-jp-dhb" secondAttribute="bottom" constant="8" id="Or2-cS-5R8"/>
+                            <constraint firstItem="CrN-SO-kaM" firstAttribute="top" secondItem="1n2-Ix-hdb" secondAttribute="top" constant="20" id="PEd-HE-P5L"/>
+                            <constraint firstItem="Jul-cn-yaM" firstAttribute="top" secondItem="1n2-Ix-hdb" secondAttribute="top" constant="20" id="Pm8-UI-dYk"/>
+                            <constraint firstItem="1n2-Ix-hdb" firstAttribute="bottom" secondItem="eJK-jp-dhb" secondAttribute="bottom" constant="65" id="T56-ds-e2f"/>
+                            <constraint firstItem="8bh-1a-hfZ" firstAttribute="top" secondItem="bbA-r7-Uo7" secondAttribute="top" id="Wx3-in-5vU"/>
+                            <constraint firstItem="z3c-um-hNd" firstAttribute="top" secondItem="1n2-Ix-hdb" secondAttribute="top" constant="20" id="ZNm-f0-tMh"/>
+                            <constraint firstItem="eJK-jp-dhb" firstAttribute="top" secondItem="wbu-Ro-rV7" secondAttribute="bottom" constant="100" id="eBi-W7-W6N"/>
+                            <constraint firstItem="1n2-Ix-hdb" firstAttribute="trailing" secondItem="wbu-Ro-rV7" secondAttribute="trailing" constant="20" id="fV9-M3-dOj"/>
+                            <constraint firstItem="1n2-Ix-hdb" firstAttribute="trailing" secondItem="CrN-SO-kaM" secondAttribute="trailing" constant="20" id="lZv-Ze-EjG"/>
+                            <constraint firstItem="Jul-cn-yaM" firstAttribute="leading" secondItem="z3c-um-hNd" secondAttribute="trailing" constant="8" id="maR-6T-u5k"/>
+                            <constraint firstItem="wbu-Ro-rV7" firstAttribute="top" secondItem="Jul-cn-yaM" secondAttribute="bottom" constant="60" id="o1m-ai-szL"/>
+                            <constraint firstItem="z3c-um-hNd" firstAttribute="leading" secondItem="1n2-Ix-hdb" secondAttribute="leading" constant="20" id="xki-Mj-3Xc"/>
+                            <constraint firstItem="raZ-Cf-iKF" firstAttribute="leading" secondItem="1n2-Ix-hdb" secondAttribute="leading" id="ycg-5O-hgL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Current Weather" leftItemsSupplementBackButton="YES" id="DkX-3C-whM">
+                        <barButtonItem key="backBarButtonItem" title="return" id="fGi-QN-UHd"/>
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.down" catalog="system" id="h4w-IE-gwW">
+                            <color key="tintColor" red="1" green="0.55439899849999996" blue="0.41800082599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="r2b-Wp-27D" id="RkE-cx-DWE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="background" destination="8bh-1a-hfZ" id="e3c-sP-Lf9"/>
+                        <outlet property="currentDay" destination="raZ-Cf-iKF" id="WQW-jO-1zi"/>
+                        <outlet property="locationLabel" destination="eJK-jp-dhb" id="81j-Tj-5at"/>
+                        <outlet property="tempLabel" destination="Jul-cn-yaM" id="yUz-0W-4AW"/>
+                        <outlet property="weatherDescription" destination="z3c-um-hNd" id="qJi-VG-XUx"/>
+                        <outlet property="weatherImage" destination="wbu-Ro-rV7" id="9qs-Rd-rfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdf-YZ-xg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1668.1159420289857" y="691.74107142857144"/>
         </scene>
     </scenes>
     <designables>

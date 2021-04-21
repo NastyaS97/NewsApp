@@ -17,6 +17,7 @@
 		E03E2AE2262864580072F6CA /* NAOneboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AE1262864580072F6CA /* NAOneboardingViewController.swift */; };
 		E03E2AEA26286FA70072F6CA /* NAOnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AE926286FA70072F6CA /* NAOnboardingSlide.swift */; };
 		E03E2AEF262872AC0072F6CA /* NAOnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03E2AEE262872AC0072F6CA /* NAOnboardingViewCell.swift */; };
+		E0446DF226304FD900B8FF22 /* NAWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0446DF126304FD900B8FF22 /* NAWeatherController.swift */; };
 		E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52AD26250EE50062CB0E /* NALocationViewController.swift */; };
 		E06B52B62625BDA60062CB0E /* NACollectionWithTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */; };
 		E06B52BB2625D5B40062CB0E /* NAShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B52BA2625D5B40062CB0E /* NAShedule.swift */; };
@@ -49,6 +50,7 @@
 		E03E2AE1262864580072F6CA /* NAOneboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOneboardingViewController.swift; sourceTree = "<group>"; };
 		E03E2AE926286FA70072F6CA /* NAOnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOnboardingSlide.swift; sourceTree = "<group>"; };
 		E03E2AEE262872AC0072F6CA /* NAOnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOnboardingViewCell.swift; sourceTree = "<group>"; };
+		E0446DF126304FD900B8FF22 /* NAWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAWeatherController.swift; sourceTree = "<group>"; };
 		E06B52AD26250EE50062CB0E /* NALocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALocationViewController.swift; sourceTree = "<group>"; };
 		E06B52B52625BDA50062CB0E /* NACollectionWithTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACollectionWithTimeTable.swift; sourceTree = "<group>"; };
 		E06B52BA2625D5B40062CB0E /* NAShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAShedule.swift; sourceTree = "<group>"; };
@@ -258,6 +260,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E0446DEF26304FB300B8FF22 /* Weather Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0446DF026304FC000B8FF22 /* Controller */,
+			);
+			path = "Weather Controller";
+			sourceTree = "<group>";
+		};
+		E0446DF026304FC000B8FF22 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0446DF126304FD900B8FF22 /* NAWeatherController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E06B52B82625D57B0062CB0E /* Collection Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +342,7 @@
 		E09E8C6A2610F2B500FA158A /* Location Controlles */ = {
 			isa = PBXGroup;
 			children = (
+				E0446DEF26304FB300B8FF22 /* Weather Controller */,
 				E03E2AB5262713E90072F6CA /* Controllers */,
 			);
 			path = "Location Controlles";
@@ -527,6 +546,7 @@
 				E03E2ACE26285B620072F6CA /* NANewsModel.swift in Sources */,
 				E0883A2D260CE650005CE323 /* SceneDelegate.swift in Sources */,
 				E09E8C672610EDFF00FA158A /* NARoundImageView.swift in Sources */,
+				E0446DF226304FD900B8FF22 /* NAWeatherController.swift in Sources */,
 				E03E2AE2262864580072F6CA /* NAOneboardingViewController.swift in Sources */,
 				E06B52AE26250EE50062CB0E /* NALocationViewController.swift in Sources */,
 				E03E2AD826285BE00072F6CA /* NAPageViewController.swift in Sources */,
